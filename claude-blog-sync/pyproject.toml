@@ -1,0 +1,29 @@
+[build-system]
+requires = ["hatchling>=1.26"]
+build-backend = "hatchling.build"
+
+[project]
+name = "claude-blog-sync"
+version = "0.1.0"
+description = "Incrementally archive claude.com/blog articles as Markdown and clean HTML"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+  "beautifulsoup4>=4.12,<5",
+  "markdownify>=1.1,<2",
+  "requests>=2.31,<3",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=8,<10"]
+
+[project.scripts]
+claude-blog-sync = "claude_blog_sync.cli:main"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/claude_blog_sync"]
+
+[tool.pytest.ini_options]
+addopts = "-q"
+testpaths = ["tests"]
+

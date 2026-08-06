@@ -1,0 +1,8 @@
+.agents/
+**/.venv/
+**/__pycache__/
+**/.pytest_cache/
+**/.translation_cache.json
+*.py[cod]
+.DS_Store
+Thumbs.db
