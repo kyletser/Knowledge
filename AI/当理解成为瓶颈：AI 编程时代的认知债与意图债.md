@@ -6,7 +6,7 @@
 ---
 
 
-![](./assets/当理解成为瓶颈：AI 编程时代的认知债与意图债/8d19d6b874a2ada4f0bb4a54befb1ed8.png)
+![](<./assets/当理解成为瓶颈：AI 编程时代的认知债与意图债/8d19d6b874a2ada4f0bb4a54befb1ed8.png>)
 
 这是2026年的第 42 篇文章
 
@@ -40,7 +40,7 @@
 
 软件债务不是什么新鲜事
 
-![](./assets/当理解成为瓶颈：AI 编程时代的认知债与意图债/09da8e686dbf9be503ad0a69df11282a.png)
+![](<./assets/当理解成为瓶颈：AI 编程时代的认知债与意图债/09da8e686dbf9be503ad0a69df11282a.png>)
 
 软件工程的债务其实早已不是什么新鲜事，早在50年前 Fred Brooks 在 《The Mythical Man-Month》 中提到的软件复杂性，到Robert C. Martin耳熟能详的 《Clean Code》 与 《Clean Architecture》，都是在教我们如何控制复杂性。当复杂性无法被治理与有效隔离时，蔓延出来对后续迭代产生影响的内容就是软件工程的技术债务。
 
@@ -56,7 +56,7 @@
 
 「理解」是真痛点还是伪目标
 
-![](./assets/当理解成为瓶颈：AI 编程时代的认知债与意图债/c4027e02790205cc9560e306508342cd.png)
+![](<./assets/当理解成为瓶颈：AI 编程时代的认知债与意图债/c4027e02790205cc9560e306508342cd.png>)
 
 之前的软件债务我们深有感触，前人遗留下来一堆祖传代码，我们除了吐槽，能做的也只有“屎上雕花”。但AI编程时代不一样了，一些多层嵌套的条件分支代码，无限套用的函数回调，这些我们人很难接受的代码，对机器或许是友好的。当然，更关键得是，真正落笔的不再是我们了。
 
@@ -80,7 +80,7 @@ Vibe Coding风靡全球
 
 Grok的二进制直出愿景
 
-![](./assets/当理解成为瓶颈：AI 编程时代的认知债与意图债/4aedebc6c68bc8d8285bd78c39f258b1.png)
+![](<./assets/当理解成为瓶颈：AI 编程时代的认知债与意图债/4aedebc6c68bc8d8285bd78c39f258b1.png>)
 
 2024年，日本东京大学开发了一项自动驾驶技术，让一个人形机器人坐进驾驶位。这款人型机器人拥有仿生骨架和肌肉系统，还装有高精度摄像头，四肢配备高灵敏度传感器，它不需要对车辆本身进行复杂的电子系统改造或安装昂贵的外部传感器套件，仅通过模仿人类的驾驶决策和操作方式，来完成全自动驾驶。
 
@@ -106,7 +106,7 @@ Grok的二进制直出愿景
 
 ## 三元债模型（Triple Debt Model）
 
-![](./assets/当理解成为瓶颈：AI 编程时代的认知债与意图债/9cc758a45cecdd458ace5323bab1d9bf.png)
+![](<./assets/当理解成为瓶颈：AI 编程时代的认知债与意图债/9cc758a45cecdd458ace5323bab1d9bf.png>)
 
 Margaret-Anne Storey 在 From Technical Debt to Cognitive and Intent Debt 中提到，生成式 AI 不会消除软件工程的挑战，而是重新分配它们。她将AI编码时代下软件系统的债务，分为如下3种：
 
@@ -157,7 +157,7 @@ Margaret-Anne Storey 在 From Technical Debt to Cognitive and Intent Debt 中�
 
 ## 理解的本质是为了参与
 
-![](./assets/当理解成为瓶颈：AI 编程时代的认知债与意图债/8cd96bb785cbe4e1f46fb5c7af1336f8.png)
+![](<./assets/当理解成为瓶颈：AI 编程时代的认知债与意图债/8cd96bb785cbe4e1f46fb5c7af1336f8.png>)
 
 2026年7月，前 MIT 研究者、现 Notion 设计工程师 Geoffrey Litt 在 AI Engineer conference 上提到了一个观点：理解的本质不是为了验证而是为了参与，是为了让你有提出改进系统下一个想法的能力。
 
@@ -191,7 +191,7 @@ Karpathy在 From Vibe Coding to Agentic Engineering 播客中提到一个观�
 
 写在最后
 
-![](./assets/当理解成为瓶颈：AI 编程时代的认知债与意图债/7ac7d259a881f982fbdc730a9c86e205.png)
+![](<./assets/当理解成为瓶颈：AI 编程时代的认知债与意图债/7ac7d259a881f982fbdc730a9c86e205.png>)
 
 最早听到「debts」这个单词，还是在《权力的游戏》中，“A Lannister always pays his debts”这句话，小恶魔经常挂在嘴边。软件世界的债从不会凭空消失，它只会被记账、被转移、被延期，如同洪水一点点漫过堤坝，它会在某个时间产生无法回转且致命的灾难。
 

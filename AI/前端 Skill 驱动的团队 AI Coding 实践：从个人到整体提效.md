@@ -5,7 +5,7 @@
 
 ---
 
-![](./assets/前端 Skill 驱动的团队 AI Coding 实践：从个人到整体提效/77637050a53daa5d9702ef19ea1829e5.png)
+![](<./assets/前端 Skill 驱动的团队 AI Coding 实践：从个人到整体提效/77637050a53daa5d9702ef19ea1829e5.png>)
 
 > **导语**：
 > 这是2026年的第 45 篇文章
@@ -32,7 +32,7 @@
 
 👉🏻 一个典型的现象：后端用 AI 全栈跑通一个工具到了验收环节，业务方说"太丑"、设计说"不符合规范"、后端说"前端帮忙调一下"。前端打开代码——Tailwind 散落几十个文件、各种手写 SVG、原生 `<input>` 加一堆css——功能跑通了，但全都是技术债。
 
-![](./assets/前端 Skill 驱动的团队 AI Coding 实践：从个人到整体提效/c51bea0b72ee6a7739210b4a2960ebcd.png)
+![](<./assets/前端 Skill 驱动的团队 AI Coding 实践：从个人到整体提效/c51bea0b72ee6a7739210b4a2960ebcd.png>)
 
 02
 
@@ -65,7 +65,7 @@
 
 认知转变：从「做平台」到「做 Skill」
 
-![](./assets/前端 Skill 驱动的团队 AI Coding 实践：从个人到整体提效/0387ba1912a19d610edef270f38eb4f3.png)
+![](<./assets/前端 Skill 驱动的团队 AI Coding 实践：从个人到整体提效/0387ba1912a19d610edef270f38eb4f3.png>)
 
 接上面的案例，我们做 AI 配图也走过类似的弯路，先调 prompt → 做独立 App → 最终沉淀为了 Skill。AI Coding 也是同理：单独做平台对内要持续维护、对外增加门槛，而集团工具能力还在持续进化，自建平台跟不上就会被淘汰（One Day、Super Web 现在需要不断和业界领先能力对齐，维护成本很大）。更合理的策略是借 Qoder 这类集团级平台，把精力聚焦在用 Skill、MCP、知识库等来建设符合团队业务特性的周边能力。
 
@@ -117,7 +117,7 @@
 
 an-frontend-skill 的五维结构
 
-![](./assets/前端 Skill 驱动的团队 AI Coding 实践：从个人到整体提效/a66804ffa42949b9181f83a4ccc59efc.png)
+![](<./assets/前端 Skill 驱动的团队 AI Coding 实践：从个人到整体提效/a66804ffa42949b9181f83a4ccc59efc.png>)
 
 ### 为什么是这样的五维？
 
@@ -224,7 +224,7 @@ an-frontend-skill/
 - 列表页：`useRequest + Table + columns prop` 的完整骨架；
 - 表单页：`Form + Form.Item + name + rules + onFinish` 的标准写法。
 
-![](./assets/前端 Skill 驱动的团队 AI Coding 实践：从个人到整体提效/949ea809aa4fe11c1d1300c6c894f12e.png)
+![](<./assets/前端 Skill 驱动的团队 AI Coding 实践：从个人到整体提效/949ea809aa4fe11c1d1300c6c894f12e.png>)
 
 ### 维度 5：跨能力集成（Map：设计 + 国际化）
 
@@ -269,7 +269,7 @@ an-frontend-skill/
 
 实践落地案例
 
-![](./assets/前端 Skill 驱动的团队 AI Coding 实践：从个人到整体提效/88cb8ef84ef983cc7dbf5856c0749749.png)
+![](<./assets/前端 Skill 驱动的团队 AI Coding 实践：从个人到整体提效/88cb8ef84ef983cc7dbf5856c0749749.png>)
 
 ### 案例 1：Status 云产品健康看板——D2C/R2C 能力实战
 
@@ -371,7 +371,7 @@ node scripts/translate-en-us.js
 
 场景延伸：R2C 需求转代码
 
-![](./assets/前端 Skill 驱动的团队 AI Coding 实践：从个人到整体提效/5eae55003363097f31efe591b21d669a.png)
+![](<./assets/前端 Skill 驱动的团队 AI Coding 实践：从个人到整体提效/5eae55003363097f31efe591b21d669a.png>)
 
 在 Skill 基座之上，我们进一步探索了 R2C（Requirement-to-Code）：拿到 PRD 后通过多个 Skill 串联，让低复杂度需求（管理后台增删改查类）由后端/产品/业务同学自主闭环，降低前端依赖。
 
@@ -446,7 +446,7 @@ node scripts/translate-en-us.js
 
 个人写得快不是竞争力，把「怎么写得对」沉淀成可复用的能力资产，让所有人都写得对，才是。
 
-![](./assets/前端 Skill 驱动的团队 AI Coding 实践：从个人到整体提效/048686696594d6195f2592e7fe10e426.png)
+![](<./assets/前端 Skill 驱动的团队 AI Coding 实践：从个人到整体提效/048686696594d6195f2592e7fe10e426.png>)
 
 ### 从个人能力到组织能力：Skill 是规模化杠杆
 
@@ -482,7 +482,7 @@ AI 时代真正稀缺的能力是发现痛点的洞察力，技术实现门槛�
 
 这些能力都是从真实场景里长出来的。先解决自己的问题，再把解法泛化成可复用的工具——这个路径对团队里每个人都适用。
 
-![](./assets/前端 Skill 驱动的团队 AI Coding 实践：从个人到整体提效/5d04b3ddd04b5f9331f9ee7037a3b9c8.png)
+![](<./assets/前端 Skill 驱动的团队 AI Coding 实践：从个人到整体提效/5d04b3ddd04b5f9331f9ee7037a3b9c8.png>)
 
 10
 
@@ -499,8 +499,8 @@ AI 时代真正稀缺的能力是发现痛点的洞察力，技术实现门槛�
 
 团队研发流程的每个质量关口都有 Skill 约束在场，AI 在整条链路上都带着团队经验运行。
 
-![图片](./assets/前端 Skill 驱动的团队 AI Coding 实践：从个人到整体提效/3ce072677da9a476c84656515a94ef58.gif)
+![图片](<./assets/前端 Skill 驱动的团队 AI Coding 实践：从个人到整体提效/3ce072677da9a476c84656515a94ef58.gif>)
 
-![图片](./assets/前端 Skill 驱动的团队 AI Coding 实践：从个人到整体提效/cda524bfff5eae6825001a9a826985cc.gif)
+![图片](<./assets/前端 Skill 驱动的团队 AI Coding 实践：从个人到整体提效/cda524bfff5eae6825001a9a826985cc.gif>)
 
 欢迎留言一起参与讨论~

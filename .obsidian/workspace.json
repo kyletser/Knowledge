@@ -1,0 +1,234 @@
+{
+  "main": {
+    "id": "51127c075fb5bcb8",
+    "type": "split",
+    "children": [
+      {
+        "id": "910d50688f45098c",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "156688447fb43f8d",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "README.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "README"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "265190398ebe9923",
+    "type": "split",
+    "children": [
+      {
+        "id": "6b7aefe8dd62a8f7",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "e5ddd6bbaced4de5",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-folder-closed",
+              "title": "文件列表"
+            }
+          },
+          {
+            "id": "4c5bd41437220d59",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "搜索"
+            }
+          },
+          {
+            "id": "51bbd4d1a8c81369",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-bookmark",
+              "title": "书签"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "f0f9fe2d8f9fdcfe",
+    "type": "split",
+    "children": [
+      {
+        "id": "0e68bf695305dbc8",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "a0053cd67f608b2f",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "AI/前端 Skill 驱动的团队 AI Coding 实践：从个人到整体提效.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "反向链接"
+            }
+          },
+          {
+            "id": "b93bc31cb4ccc329",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "AI/前端 Skill 驱动的团队 AI Coding 实践：从个人到整体提效.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "出链"
+            }
+          },
+          {
+            "id": "f5579484200b1309",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "标签"
+            }
+          },
+          {
+            "id": "28b9e012cced559f",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-archive",
+              "title": "添加笔记属性"
+            }
+          },
+          {
+            "id": "569059d23e9c19cb",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "AI/前端 Skill 驱动的团队 AI Coding 实践：从个人到整体提效.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "大纲"
+            }
+          },
+          {
+            "id": "f8a1323893b58098",
+            "type": "leaf",
+            "state": {
+              "type": "git-view",
+              "state": {},
+              "icon": "git-pull-request",
+              "title": "Source Control"
+            }
+          }
+        ],
+        "currentTab": 5
+      }
+    ],
+    "direction": "horizontal",
+    "width": 602.591064453125
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:打开快速切换": false,
+      "graph:查看关系图谱": false,
+      "canvas:新建白板": false,
+      "daily-notes:打开/创建今天的日记": false,
+      "templates:插入模板": false,
+      "command-palette:打开命令面板": false,
+      "bases:新建数据库": false,
+      "markdown-importer:打开 Markdown 格式转换器": false,
+      "obsidian-git:Open Git source control": false
+    }
+  },
+  "active": "156688447fb43f8d",
+  "lastOpenFiles": [
+    "未命名.base",
+    "ai-agent-book/book/chapter4.md",
+    "ai-agent-book/book/chapter3.md",
+    "ai-agent-book/book/chapter2.md",
+    "AI/Loop Engineering 实践指南：在 Code Buddy 中构建自主循环系统.md",
+    "AI/Loop Engineering 已死？ 一文带你了解Graph Engineering.md",
+    "AI/从 Agent Flow 到 AI Native：为什么通用 Agent 是“饮鸩止渴”.md",
+    "Anthropic第一手/01-Claude Code 开发实践/2026-04-10-像智能体一样看待：我们如何在 Claude Code 中设计工具/像智能体一样看待：我们如何在 Claude Code 中设计工具.md",
+    "ai-agent-book/book/chapter1.md",
+    "AI/assets/Loop Engineering 已死？ 一文带你了解Graph Engineering/f55b2546e88b030a0ccf9ef29fbc89fd.webp",
+    "AI/assets/Loop Engineering 已死？ 一文带你了解Graph Engineering/f3fc62ec1c1866f5a920f607565a227d.webp",
+    "AI/assets/Loop Engineering 已死？ 一文带你了解Graph Engineering/e844ab85d0f37815e5000a523c0f8fda.webp",
+    "AI/assets/Loop Engineering 已死？ 一文带你了解Graph Engineering/e779cd5308b8dedc36f091598c803038.webp",
+    "AI/assets/Loop Engineering 已死？ 一文带你了解Graph Engineering/aa3d6c0af406b44bbd1561407e854def.webp",
+    "AI/assets/Loop Engineering 已死？ 一文带你了解Graph Engineering/8e1d56235b95764d101f1b8fbb0d005d.webp",
+    "AI/assets/Loop Engineering 已死？ 一文带你了解Graph Engineering/626eeb131fc4e42736caa10b82901fc5.webp",
+    "AI/assets/Loop Engineering 已死？ 一文带你了解Graph Engineering/5d48fd027d46902c07efc33d9fc3a602.webp",
+    "AI/assets/Loop Engineering 已死？ 一文带你了解Graph Engineering/5676a9ab1082170bc8b38a1a7f6be39e.webp",
+    "AI/assets/Loop Engineering 已死？ 一文带你了解Graph Engineering/558312cb8a555b49e1d38f33fbaeff62.webp",
+    "learn-claude-code-main/s02_tool_use/README.md",
+    "learn-claude-code-main/s02_tool_use/README.ja.md",
+    "learn-claude-code-main/s02_tool_use/README.en.md",
+    "AI/从AI Coding到Harness Engineering的端到端工程开发实践.md",
+    "ai-agent-book/book/afterword.md",
+    "AI/前端 Skill 驱动的团队 AI Coding 实践：从个人到整体提效.md",
+    "AI/当整个团队开始 0 人工Coding：一份万字AI Native研发实战手册.md",
+    "AI/当理解成为瓶颈：AI 编程时代的认知债与意图债.md",
+    "assets"
+  ]
+}

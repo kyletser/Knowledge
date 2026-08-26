@@ -5,7 +5,7 @@
 
 ---
 
-![](./assets/从 Agent Flow 到 AI Native：为什么通用 Agent 是“饮鸩止渴”/e189f78c89f29a8dae26318964b1cdb6.png)
+![](<./assets/从 Agent Flow 到 AI Native：为什么通用 Agent 是“饮鸩止渴”/e189f78c89f29a8dae26318964b1cdb6.png>)
 
 > **导语**：
 > 这是2026年的第 48 篇文章
@@ -14,7 +14,7 @@
 ### 01 Agent Flow
 我最近一直在做一个“小玩具”：Agent Flow。最初的目的很明确，就是想在某些特定场景和受众群里，取代现有的 Agent Skill。
 
-![](./assets/从 Agent Flow 到 AI Native：为什么通用 Agent 是“饮鸩止渴”/8059059d683a52ce91614fb2b2d5eebb.png)
+![](<./assets/从 Agent Flow 到 AI Native：为什么通用 Agent 是“饮鸩止渴”/8059059d683a52ce91614fb2b2d5eebb.png>)
 
 这个 Flow 本质上是传统 Flow 的强化，但它的核心不是让用户理解节点、连线和 JSON，是让用户用自然语言描述目标，然后让 LLM 去理解目标、生成 Flow、修改 Flow、运行 Flow。
 

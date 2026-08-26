@@ -6,7 +6,7 @@
 ---
 
 
-![](./assets/驾驭AI Coding：一份面向团队的Harness Engineering落地规范/c1c2db5889092a74bee928b3c104b62f.gif)
+![](<./assets/驾驭AI Coding：一份面向团队的Harness Engineering落地规范/c1c2db5889092a74bee928b3c104b62f.gif>)
 
 作者：atreusliu
 
@@ -93,7 +93,7 @@ Harness Engineering 就是来解决这些问题的：
 
 Harness Engineering 把 Agent 的运行环境拆成 6 个支柱，每个支柱在我们的开发规范中都有对应的工具和实践。下面逐个说明。
 
-![](./assets/驾驭AI Coding：一份面向团队的Harness Engineering落地规范/a37fc366f625c4a5ab5e0ad0211943f0.png)
+![](<./assets/驾驭AI Coding：一份面向团队的Harness Engineering落地规范/a37fc366f625c4a5ab5e0ad0211943f0.png>)
 
 上图来自于公众号文章: https://mp.weixin.qq.com/s/gs5ndvlMqM-Y4jg1\_D2aFw 该文对Harness做了详细的讲解，本文不过多赘述;
 
@@ -127,7 +127,7 @@ OpenAI 自己踩过坑：早期试过"一个巨大的 AGENTS.md"，失败了。�
 
 工具系统由三部分组成：MCP（连接外部世界）、Skills（封装专家经验）和知识库（注入业务上下文），三者配合构成 AI Agent 的完整能力体系。
 
-![](./assets/驾驭AI Coding：一份面向团队的Harness Engineering落地规范/f8f0f12aa4f68fd4f48e5b7742107791.png)
+![](<./assets/驾驭AI Coding：一份面向团队的Harness Engineering落地规范/f8f0f12aa4f68fd4f48e5b7742107791.png>)
 
 **MCP（Model Context Protocol）—— 连接外部数据源**
 
@@ -174,7 +174,7 @@ Skills 是业务逻辑、领域知识和执行 SOP 的封装，让 AI 从"什么
 
 执行编排不只是选模式（Plan vs Agent），而是一套多 Agent 协作的标准化工作流。团队应该遵循“3+1 Phase”流程，每个阶段由不同角色的 Agent 负责：
 
-![](./assets/驾驭AI Coding：一份面向团队的Harness Engineering落地规范/2176b160b03eb0a00502182e197a133a.png)
+![](<./assets/驾驭AI Coding：一份面向团队的Harness Engineering落地规范/2176b160b03eb0a00502182e197a133a.png>)
 
 **"3+1 Phase" 标准化工作流**：
 
@@ -187,7 +187,7 @@ Skills 是业务逻辑、领域知识和执行 SOP 的封装，让 AI 从"什么
 
 **多 Agent 角色定义**：
 
-![](./assets/驾驭AI Coding：一份面向团队的Harness Engineering落地规范/e2a3d76b24cc561e2c507b514c9b2277.png)
+![](<./assets/驾驭AI Coding：一份面向团队的Harness Engineering落地规范/e2a3d76b24cc561e2c507b514c9b2277.png>)
 
 | Agent 角色 | 职责 | 加载的 Harness |
 | --- | --- | --- |
@@ -225,7 +225,7 @@ Skills 是业务逻辑、领域知识和执行 SOP 的封装，让 AI 从"什么
 
 > 问题：怎么验证 AI 生成的代码是不是靠谱的？
 
-![](./assets/驾驭AI Coding：一份面向团队的Harness Engineering落地规范/0c7ab3f7cc4b35eca62ff6605f8063c9.png)
+![](<./assets/驾驭AI Coding：一份面向团队的Harness Engineering落地规范/0c7ab3f7cc4b35eca62ff6605f8063c9.png>)
 
 评估分四层：
 
@@ -297,7 +297,7 @@ Skills 是业务逻辑、领域知识和执行 SOP 的封装，让 AI 从"什么
 
 在开发实践过程中,我们整理了一个AI编码的整体架构图，从上到下分五层：输入层 → 工作台（CodeBuddy）→ 底层支撑（MCP）→ 输出层 → 度量层，数据自上而下流动，形成闭环：
 
-![](./assets/驾驭AI Coding：一份面向团队的Harness Engineering落地规范/c96c47cdabe0807ca0b663d8a5196dbf.png)
+![](<./assets/驾驭AI Coding：一份面向团队的Harness Engineering落地规范/c96c47cdabe0807ca0b663d8a5196dbf.png>)
 
 **各层职责**
 
@@ -552,7 +552,7 @@ Rules 是 AI 在每次交互中必须加载的全局约束，相当于 AI 必须
 
 ###### 4.3.1 Rules 分层体系
 
-![](./assets/驾驭AI Coding：一份面向团队的Harness Engineering落地规范/d87ec4f1652189242a64239159753447.png)
+![](<./assets/驾驭AI Coding：一份面向团队的Harness Engineering落地规范/d87ec4f1652189242a64239159753447.png>)
 
 | 层级 | 作用域 | 配置方式 | 加载方式 |
 | --- | --- | --- | --- |
@@ -649,7 +649,7 @@ alwaysApply: true
 
 ###### 4.3.5 Rules 的保存与复用流程
 
-![](./assets/驾驭AI Coding：一份面向团队的Harness Engineering落地规范/4f3cc1045712f3085b0b93d2929e4b78.png)
+![](<./assets/驾驭AI Coding：一份面向团队的Harness Engineering落地规范/4f3cc1045712f3085b0b93d2929e4b78.png>)
 
 业务项目team-harness 仓库开发者业务项目team-harness 仓库开发者AI 下次交互自动加载新规则1. 提交 Rules 变更 PR2. 团队 Review & 合并3. 自动同步到各业务项目4. .codebuddy/rules/ 更新
 
@@ -803,7 +803,7 @@ MCP（Model Context Protocol）是 AI 的"感知触手"，让 AI 能触达代码
 
 ###### 5.1.1 MCP 接入决策
 
-![](./assets/驾驭AI Coding：一份面向团队的Harness Engineering落地规范/6cbd9ffc79ee9c5311dc96ebebd1e124.png)
+![](<./assets/驾驭AI Coding：一份面向团队的Harness Engineering落地规范/6cbd9ffc79ee9c5311dc96ebebd1e124.png>)
 
 **⚠️ 何时不该用 MCP**：
 
@@ -1130,7 +1130,7 @@ description: "七彩石（Rainbow）配置中心的连接、查询和更新操�
 
 ###### 5.4.2 Skills 创建与复用流程
 
-![](./assets/驾驭AI Coding：一份面向团队的Harness Engineering落地规范/a4b99698ef983e4388af649ea35c6ab6.png)![](./assets/驾驭AI Coding：一份面向团队的Harness Engineering落地规范/14b4ff0607c2d76703baef3de610b71b.png)
+![](<./assets/驾驭AI Coding：一份面向团队的Harness Engineering落地规范/a4b99698ef983e4388af649ea35c6ab6.png>)![](<./assets/驾驭AI Coding：一份面向团队的Harness Engineering落地规范/14b4ff0607c2d76703baef3de610b71b.png>)
 
 ###### 5.4.3 Skill 创建实操
 
@@ -1179,7 +1179,7 @@ Plan 模式是实现规范驱动开发的核心手段：在 AI 动手写代码�
 
 #### 5.5.1 Plan 模式开发流程（4 Stage）
 
-![](./assets/驾驭AI Coding：一份面向团队的Harness Engineering落地规范/aa489078db0db9262decc0a531ee1d82.png)
+![](<./assets/驾驭AI Coding：一份面向团队的Harness Engineering落地规范/aa489078db0db9262decc0a531ee1d82.png>)
 
 | 阶段 | 操作 | 模式 | 产出 |
 | --- | --- | --- | --- |
@@ -1236,7 +1236,7 @@ mv .codebuddy/plan/feat-operation-log .codebuddy/plan/archive/feat-operation-log
 
 ##### 6.1 SOP-A：新需求开发
 
-![](./assets/驾驭AI Coding：一份面向团队的Harness Engineering落地规范/c4835a2c8e4cd51001d9a04f7c419540.png)![](./assets/驾驭AI Coding：一份面向团队的Harness Engineering落地规范/4d3b4b7b86fa84dfd843cbe4ccbd3e4b.png)
+![](<./assets/驾驭AI Coding：一份面向团队的Harness Engineering落地规范/c4835a2c8e4cd51001d9a04f7c419540.png>)![](<./assets/驾驭AI Coding：一份面向团队的Harness Engineering落地规范/4d3b4b7b86fa84dfd843cbe4ccbd3e4b.png>)
 
 **简单需求的快捷流程**（< 半天工作量）：
 
@@ -1254,7 +1254,7 @@ mv .codebuddy/plan/feat-operation-log .codebuddy/plan/archive/feat-operation-log
 
 ##### 6.2 SOP-B：Bug 修复
 
-![](./assets/驾驭AI Coding：一份面向团队的Harness Engineering落地规范/1127832603310f99b4fd6b192d9a1f61.png)![image-20260707143742383](./assets/驾驭AI Coding：一份面向团队的Harness Engineering落地规范/fbaf51feb82722446582593b1972b5d4.png)
+![](<./assets/驾驭AI Coding：一份面向团队的Harness Engineering落地规范/1127832603310f99b4fd6b192d9a1f61.png>)![image-20260707143742383](<./assets/驾驭AI Coding：一份面向团队的Harness Engineering落地规范/fbaf51feb82722446582593b1972b5d4.png>)
 
 Bug 修复红线：
 
@@ -1480,7 +1480,7 @@ Harness 合规性各维度得分率AGENTS.mdRulesSkillsMCPPlan工程Commit100908
 
 ##### 📈 成熟度路线图
 
-![](./assets/驾驭AI Coding：一份面向团队的Harness Engineering落地规范/4a79205c986a814327fc8dcffd31956a.png)
+![](<./assets/驾驭AI Coding：一份面向团队的Harness Engineering落地规范/4a79205c986a814327fc8dcffd31956a.png>)
 
 > **当前阶段**：第二阶段（工具接入）
 
@@ -1528,6 +1528,6 @@ AI Agent 工具能在代码质量的各个方面帮不少忙，但最终的质�
 
 如有不足,欢迎讨论指正。
 
-![](./assets/驾驭AI Coding：一份面向团队的Harness Engineering落地规范/366862c98fc42b63e04ea33820fbb5c7.gif)
+![](<./assets/驾驭AI Coding：一份面向团队的Harness Engineering落地规范/366862c98fc42b63e04ea33820fbb5c7.gif>)
 
-![](./assets/驾驭AI Coding：一份面向团队的Harness Engineering落地规范/1ddf1687e526c8734304b339ac51fb69.png)
+![](<./assets/驾驭AI Coding：一份面向团队的Harness Engineering落地规范/1ddf1687e526c8734304b339ac51fb69.png>)

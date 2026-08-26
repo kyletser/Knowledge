@@ -5,7 +5,7 @@
 
 ---
 
-![](./assets/AI Native 交易核心系统的研发范式｜得物技术/efd06108032a7da6e283420be201a5ef.gif)
+![](<./assets/AI Native 交易核心系统的研发范式｜得物技术/efd06108032a7da6e283420be201a5ef.gif>)
 
 > **导语**：
 >
@@ -237,26 +237,26 @@ AI Coding 走到下一阶段，比拼的不再是谁的模型更强，而是：�
 
 > 抓取受限（微信对本机 IP 限流），以下配图取自本地 assets，未能内联至正文对应位置；待限流解除后重跑脚本可还原内联版。
 
-![](./assets/AI Native 交易核心系统的研发范式｜得物技术/213c14109d4f3aced8b0a440d94b228f.png)
-![](./assets/AI Native 交易核心系统的研发范式｜得物技术/222217305f1e73ab0f6fd9e82c89196e.png)
-![](./assets/AI Native 交易核心系统的研发范式｜得物技术/2850a6fb336ed20f6efb0d8fd99015d5.jpg)
-![](./assets/AI Native 交易核心系统的研发范式｜得物技术/31e98c2d4d7f327f53193a68ed5fb274.png)
-![](./assets/AI Native 交易核心系统的研发范式｜得物技术/32299a4c386fbdb3b271464f339bf5e4.png)
-![](./assets/AI Native 交易核心系统的研发范式｜得物技术/3445c2fc0b807158746690a719dd0e96.png)
-![](./assets/AI Native 交易核心系统的研发范式｜得物技术/3cd8f39a7ede3f3447813a8d25895d80.png)
-![](./assets/AI Native 交易核心系统的研发范式｜得物技术/46a932826f9ecc4064114e1def385b74.png)
-![](./assets/AI Native 交易核心系统的研发范式｜得物技术/4d2699052b3aacc43f98dc1bfdb249e0.png)
-![](./assets/AI Native 交易核心系统的研发范式｜得物技术/5aa4809d7d17725fac3228bbe467e369.png)
-![](./assets/AI Native 交易核心系统的研发范式｜得物技术/5b56be82980cfead97c4ae82dc6f16e6.png)
-![](./assets/AI Native 交易核心系统的研发范式｜得物技术/65b6b314b563132cb892abd459cbc3e5.png)
-![](./assets/AI Native 交易核心系统的研发范式｜得物技术/763f4d0cc1220b1122c52f7c94956726.png)
-![](./assets/AI Native 交易核心系统的研发范式｜得物技术/76919e3e6595784ed25c5b6d8f5152f0.png)
-![](./assets/AI Native 交易核心系统的研发范式｜得物技术/7d2f37a44211b7dc6c292f34dad84d07.png)
-![](./assets/AI Native 交易核心系统的研发范式｜得物技术/8311504c0f6799f260a288eb07b89e00.png)
-![](./assets/AI Native 交易核心系统的研发范式｜得物技术/b0fd46103c92bf1283cae9ddcf6e5088.png)
-![](./assets/AI Native 交易核心系统的研发范式｜得物技术/b2bab94c2b4e42540a5054b2b880b307.png)
-![](./assets/AI Native 交易核心系统的研发范式｜得物技术/b41969950ef7cb3d89a912c13d6ea4d6.png)
-![](./assets/AI Native 交易核心系统的研发范式｜得物技术/f329978bf53c60f602a0e3fb2b8a3296.png)
-![](./assets/AI Native 交易核心系统的研发范式｜得物技术/f7e2f78c98ba008916ecc2f30e4e9d37.png)
-![](./assets/AI Native 交易核心系统的研发范式｜得物技术/f81e27c9605c68a26cd2f71b28247829.png)
-![](./assets/AI Native 交易核心系统的研发范式｜得物技术/fad6fcc2b3b972405af7ab49cc09e281.png)
+![](<./assets/AI Native 交易核心系统的研发范式｜得物技术/213c14109d4f3aced8b0a440d94b228f.png>)
+![](<./assets/AI Native 交易核心系统的研发范式｜得物技术/222217305f1e73ab0f6fd9e82c89196e.png>)
+![](<./assets/AI Native 交易核心系统的研发范式｜得物技术/2850a6fb336ed20f6efb0d8fd99015d5.jpg>)
+![](<./assets/AI Native 交易核心系统的研发范式｜得物技术/31e98c2d4d7f327f53193a68ed5fb274.png>)
+![](<./assets/AI Native 交易核心系统的研发范式｜得物技术/32299a4c386fbdb3b271464f339bf5e4.png>)
+![](<./assets/AI Native 交易核心系统的研发范式｜得物技术/3445c2fc0b807158746690a719dd0e96.png>)
+![](<./assets/AI Native 交易核心系统的研发范式｜得物技术/3cd8f39a7ede3f3447813a8d25895d80.png>)
+![](<./assets/AI Native 交易核心系统的研发范式｜得物技术/46a932826f9ecc4064114e1def385b74.png>)
+![](<./assets/AI Native 交易核心系统的研发范式｜得物技术/4d2699052b3aacc43f98dc1bfdb249e0.png>)
+![](<./assets/AI Native 交易核心系统的研发范式｜得物技术/5aa4809d7d17725fac3228bbe467e369.png>)
+![](<./assets/AI Native 交易核心系统的研发范式｜得物技术/5b56be82980cfead97c4ae82dc6f16e6.png>)
+![](<./assets/AI Native 交易核心系统的研发范式｜得物技术/65b6b314b563132cb892abd459cbc3e5.png>)
+![](<./assets/AI Native 交易核心系统的研发范式｜得物技术/763f4d0cc1220b1122c52f7c94956726.png>)
+![](<./assets/AI Native 交易核心系统的研发范式｜得物技术/76919e3e6595784ed25c5b6d8f5152f0.png>)
+![](<./assets/AI Native 交易核心系统的研发范式｜得物技术/7d2f37a44211b7dc6c292f34dad84d07.png>)
+![](<./assets/AI Native 交易核心系统的研发范式｜得物技术/8311504c0f6799f260a288eb07b89e00.png>)
+![](<./assets/AI Native 交易核心系统的研发范式｜得物技术/b0fd46103c92bf1283cae9ddcf6e5088.png>)
+![](<./assets/AI Native 交易核心系统的研发范式｜得物技术/b2bab94c2b4e42540a5054b2b880b307.png>)
+![](<./assets/AI Native 交易核心系统的研发范式｜得物技术/b41969950ef7cb3d89a912c13d6ea4d6.png>)
+![](<./assets/AI Native 交易核心系统的研发范式｜得物技术/f329978bf53c60f602a0e3fb2b8a3296.png>)
+![](<./assets/AI Native 交易核心系统的研发范式｜得物技术/f7e2f78c98ba008916ecc2f30e4e9d37.png>)
+![](<./assets/AI Native 交易核心系统的研发范式｜得物技术/f81e27c9605c68a26cd2f71b28247829.png>)
+![](<./assets/AI Native 交易核心系统的研发范式｜得物技术/fad6fcc2b3b972405af7ab49cc09e281.png>)

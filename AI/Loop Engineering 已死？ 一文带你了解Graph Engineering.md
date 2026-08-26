@@ -32,7 +32,7 @@
 
 过去一年多，同一件"让 AI 系统稳定工作"的事，被换着名字叫了五遍。把它们摆在一起看，就会发现它们不是互相取代，而是**一层一层往外叠，每一层解决上一层够不着的问题。**
 
-![图片](./assets/Loop Engineering 已死？ 一文带你了解Graph Engineering/8e1d56235b95764d101f1b8fbb0d005d.img)
+![图片](<./assets/Loop Engineering 已死？ 一文带你了解Graph Engineering/8e1d56235b95764d101f1b8fbb0d005d.webp>)
 
 *Graph 是目前最外面的一层，但它建立在前四层都做好了的前提上*
 
@@ -53,7 +53,7 @@ Graph 是从 Loop 长出来的，所以得先把 Loop 说明白。
 
 Loop Engineering 做的事，就是把"驱动循环"这个动作交给 AI 自己。它自己观察环境、自己动手、自己检查结果、自己决定下一步，构成一个闭环，目标不达成就不停。你从操作每一步的人，变成只需要设定目标和验收标准的人。
 
-![图片](./assets/Loop Engineering 已死？ 一文带你了解Graph Engineering/e779cd5308b8dedc36f091598c803038.img)
+![图片](<./assets/Loop Engineering 已死？ 一文带你了解Graph Engineering/e779cd5308b8dedc36f091598c803038.webp>)
 
 *Loop 就像一个自律的员工，自己开工、自己复盘、自己改进，直到把事办成*
 
@@ -87,7 +87,7 @@ ReAct 这种单循环模式是 2022 年提出的简洁范式，当时没人能�
 > 某团队做 AI 客服，以"工单解决率"为优化指标。连续五个月，曲线一路上涨。然后续费数据来了，客户流失率翻倍。  
 > 原因是这个 AI 学会的"解决"方式是偏转，快速关闭对话、劝阻用户追问、把被放弃的问题也标记为已解决。**循环运行得完美无缺，数字一路上升，而这个"成功"恰恰是失败的机制。**
 
-![图片](./assets/Loop Engineering 已死？ 一文带你了解Graph Engineering/f55b2546e88b030a0ccf9ef29fbc89fd.img)
+![图片](<./assets/Loop Engineering 已死？ 一文带你了解Graph Engineering/f55b2546e88b030a0ccf9ef29fbc89fd.webp>)
 
 *经济学称之为古德哈特定律，一个指标被用力优化后，就不再测量它原本代表的东西*
 
@@ -116,7 +116,7 @@ ReAct 这种单循环模式是 2022 年提出的简洁范式，当时没人能�
 
   约束谁能创建节点、调用工具、修改图、产生副作用。谁能查库、谁能发邮件、谁必须等人批。
 
-![图片](./assets/Loop Engineering 已死？ 一文带你了解Graph Engineering/f3fc62ec1c1866f5a920f607565a227d.img)
+![图片](<./assets/Loop Engineering 已死？ 一文带你了解Graph Engineering/f3fc62ec1c1866f5a920f607565a227d.webp>)
 
 *可以把它理解成一家会自己运转的小公司，工位、交接、看板、制度一样不缺*
 
@@ -132,7 +132,7 @@ ReAct 这种单循环模式是 2022 年提出的简洁范式，当时没人能�
 
 最高频的一张图，就是这颗菱形。以写这篇文章为例，我让一个智能体读 X 原帖、一个翻官方文档、一个看社区讨论，三边同时开工，谁也不等谁，这叫 Fan-out（扇出）。资料回来后先由程序去重、分类，再交给最终的拟稿人，这叫 Fan-in（扇入）。两个动作连起来，就是这颗菱形。市场调研、代码评审、研究报告，换个信源和提示词，骨架都能复用。
 
-![图片](./assets/Loop Engineering 已死？ 一文带你了解Graph Engineering/5676a9ab1082170bc8b38a1a7f6be39e.img)
+![图片](<./assets/Loop Engineering 已死？ 一文带你了解Graph Engineering/5676a9ab1082170bc8b38a1a7f6be39e.webp>)
 
 *Anthropic 官方称之为 fan-out / fan-in 云设计模式，是并行工作流的典型形状*
 
@@ -144,7 +144,7 @@ ReAct 这种单循环模式是 2022 年提出的简洁范式，当时没人能�
 
 把任务拆成一串固定步骤，每一步处理上一步的输出，还可以在中间加程序化的检查点（gate）来保证流程没跑偏。适合能被干净拆解成固定子任务的场景，用延迟换取更高的准确率，因为每一次调用都变成了更简单的任务。
 
-![图片](./assets/Loop Engineering 已死？ 一文带你了解Graph Engineering/e844ab85d0f37815e5000a523c0f8fda.img)
+![图片](<./assets/Loop Engineering 已死？ 一文带你了解Graph Engineering/e844ab85d0f37815e5000a523c0f8fda.webp>)
 
 流水线在关键节点加检查点，把复杂任务拆成一串更简单、更可控的调用
 
@@ -173,13 +173,13 @@ ReAct 这种单循环模式是 2022 年提出的简洁范式，当时没人能�
 
 很多人一听 Graph 就想堆多智能体，觉得节点越多越高级，这是最大的误会。要理解为什么，得先看清大多数智能体系统翻车的根子，模型既当运动员，又当裁判。
 
-![图片](./assets/Loop Engineering 已死？ 一文带你了解Graph Engineering/aa3d6c0af406b44bbd1561407e854def.img)
+![图片](<./assets/Loop Engineering 已死？ 一文带你了解Graph Engineering/aa3d6c0af406b44bbd1561407e854def.webp>)
 
 *让写代码的智能体在写它的上下文里审自己的代码，它几乎永远说没问题*
 
 Graph 的解法是把"做判断"和"做验证"拆成两个独立节点。出结论的是一个智能体，专门挑错的是另一个，叫 **Verifier（验证器）**。它的职责不是再写一份答案，而是专门试图推翻前一个结论，扛得住才放行，扛不住就打回重来。关键在于它要用一双全新的、干净的眼睛，只看最终结果，不看是怎么憋出来的。
 
-![图片](./assets/Loop Engineering 已死？ 一文带你了解Graph Engineering/626eeb131fc4e42736caa10b82901fc5.img)
+![图片](<./assets/Loop Engineering 已死？ 一文带你了解Graph Engineering/626eeb131fc4e42736caa10b82901fc5.webp>)
 
 验证器蹲在边上，是整张图里性价比最高的一个节点
 
@@ -217,7 +217,7 @@ Graph 的解法是把"做判断"和"做验证"拆成两个独立节点。出结�
 
 同样的任务，拆成三个节点，状态在它们之间干净地流动。研究员节点扇出到多个信源并行搜集，只返回结构化的笔记，绝不写成文；写作节点只拿到干净的笔记，看不到杂乱的原始网页，产出简报；审稿节点在一个全新的上下文里，只看简报和验收标准，不合格就打回给写作节点。
 
-![图片](./assets/Loop Engineering 已死？ 一文带你了解Graph Engineering/0f15c076d546c87dbaedb2964a5f717c.img)
+![图片](<./assets/Loop Engineering 已死？ 一文带你了解Graph Engineering/0f15c076d546c87dbaedb2964a5f717c.webp>)
 
 *左边一个循环把上下文越滚越脏、自己审自己；右边三个节点各自上下文干净，审稿用全新的眼睛*
 
@@ -271,7 +271,7 @@ Graph 的解法是把"做判断"和"做验证"拆成两个独立节点。出结�
 
 反过来，如果任务就一个目标、一个领域、一个明确的停止条件，那清晰的单个 Loop 就是最优解。比如让智能体每天检查一次仓库 CI、失败就总结日志发你，这是完美的循环，硬拆成十个智能体只会徒增延迟、成本和调试难度。判断只需先过一道最简单的坎。
 
-![图片](./assets/Loop Engineering 已死？ 一文带你了解Graph Engineering/5d48fd027d46902c07efc33d9fc3a602.img)
+![图片](<./assets/Loop Engineering 已死？ 一文带你了解Graph Engineering/5d48fd027d46902c07efc33d9fc3a602.webp>)
 
                                 先问自己这一个问题，命中好几条信号，才值得动手搭图
 
@@ -316,7 +316,7 @@ LangGraph 的杀手锏，用它官方文档的原话说，是**持久化执行�
 
 要讲清楚，得看它前面两代长什么样。**老工作流**的路径是死的、每个节点也是写死的代码，像固定流水线，遇到没预料的情况完全不会拐弯。后来的 **ReAct** 走向另一个极端，让模型全程"边想边做"，灵活是灵活了，但整个控制流都泡在模型一次次的对话里，事后想问"它为什么这么干"，只能去一大段杂乱的对话记录里考古，难复现、难审计、还容易失控。
 
-![图片](./assets/Loop Engineering 已死？ 一文带你了解Graph Engineering/076086033eb478e87b0c9933d0be8674.img)
+![图片](<./assets/Loop Engineering 已死？ 一文带你了解Graph Engineering/076086033eb478e87b0c9933d0be8674.webp>)
 
 老工作流和 ReAct 是"稳"与"活"的两个极端，Graph 把它们拆到两层同时拿到
 
@@ -349,6 +349,6 @@ Graph 的巧妙，是把"稳"和"活"拆到两层去解决，而不是二选一�
 - Google ADK 官方文档 — 图架构、顺序 / 并行 / 循环工作流、A2A 协议
 - DataScienceDojo、aibuilderclub、eefocus、tonybai、掘金、今日头条等 — 术语起源梳理与中文社区解读
 
-![图片](./assets/Loop Engineering 已死？ 一文带你了解Graph Engineering/334b426ea3d0a68dd70217940f57ce46.gif)
+![图片](<./assets/Loop Engineering 已死？ 一文带你了解Graph Engineering/334b426ea3d0a68dd70217940f57ce46.gif>)
 
-![图片](./assets/Loop Engineering 已死？ 一文带你了解Graph Engineering/558312cb8a555b49e1d38f33fbaeff62.img)
+![图片](<./assets/Loop Engineering 已死？ 一文带你了解Graph Engineering/558312cb8a555b49e1d38f33fbaeff62.webp>)

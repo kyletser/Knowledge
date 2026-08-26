@@ -6,7 +6,7 @@
 ---
 
 
-![](./assets/Agent 治理：用 Hook 堵住 LLM 的偷懒、越权与失忆/c1c2db5889092a74bee928b3c104b62f.gif)
+![](<./assets/Agent 治理：用 Hook 堵住 LLM 的偷懒、越权与失忆/c1c2db5889092a74bee928b3c104b62f.gif>)
 
 作者：xiangnzhang
 
@@ -26,7 +26,7 @@
 2. **越权操作**：发布、回刷、冻结/解冻、终止实例这些写生产或不可逆的动作，模型无法区分操作的可逆性——它把发布和查询视为同一类"完成任务的步骤"，可能不打招呼就直接调了。
 3. **上下文失忆**：模型改完表不去分析下游风险、Python 产出图表不知告诉用户——「需要查的就不查」。模型被训练成用最短路径完成任务——额外一次 tool call 意味着多一步推理，模型倾向于跳过"看起来不必要"的检查步骤。（此处风险分析为事后下游影响评估，非改表前拦截——事前拦截由 HITL Guard 负责。）
 
-![](./assets/Agent 治理：用 Hook 堵住 LLM 的偷懒、越权与失忆/a012ce0a8924328ee9905fea1de4b864.png)
+![](<./assets/Agent 治理：用 Hook 堵住 LLM 的偷懒、越权与失忆/a012ce0a8924328ee9905fea1de4b864.png>)
 
 **"在 prompt 里多写几句 ⚠️ 禁止"根本管不住。** 这不是 prompt engineering（通过提示词约束模型行为）能解决的问题——长 SQL 是物理上超出 token 预算，危险操作是模型无法区分"查询"和"发布"的可逆性差异，被动探测是模型追求最短完成路径的自然倾向。唯一的解法是在 Agent 框架层，让偷懒和越权的路径**代码级强制走不通**，让失忆的已知盲区**确定性补齐**。
 
@@ -36,7 +36,7 @@
 
 DECO 的数仓开发 Agent 帮用户把数据需求落成 US 平台上可运行的任务。先约定几个关键名词：
 
-![](./assets/Agent 治理：用 Hook 堵住 LLM 的偷懒、越权与失忆/0513201981b8ade142dfd9b49edb216d.png)
+![](<./assets/Agent 治理：用 Hook 堵住 LLM 的偷懒、越权与失忆/0513201981b8ade142dfd9b49edb216d.png>)
 
 二、Hook 链：在关键切面挂载护栏逻辑
 
@@ -83,7 +83,7 @@ DECO 的数仓开发 Agent 帮用户把数据需求落成 US 平台上可运行�
 
 > 下文为可读性将盘路径统称 `/sandbox/`，实际代码中只读快照在 `/mnt/chat-offload/`，可编辑工作副本在 `/mnt/user-data/`。
 
-![](./assets/Agent 治理：用 Hook 堵住 LLM 的偷懒、越权与失忆/d69c4d235d89b043b37301448c28f89e.png)
+![](<./assets/Agent 治理：用 Hook 堵住 LLM 的偷懒、越权与失忆/d69c4d235d89b043b37301448c28f89e.png>)
 
 #### 拉取侧：Offload Hook（`afterTool`）
 
@@ -116,7 +116,7 @@ SELECT ... FROM dwd_b
 
 #### 写回侧：Onload Hook（`beforeTool`）
 
-![](./assets/Agent 治理：用 Hook 堵住 LLM 的偷懒、越权与失忆/c8172651ce0542970148a318f1f0f954.png)
+![](<./assets/Agent 治理：用 Hook 堵住 LLM 的偷懒、越权与失忆/c8172651ce0542970148a318f1f0f954.png>)
 
 #### 同模式延展：表侧 Offload
 
@@ -137,13 +137,13 @@ scriptFilePath :脚本的沙箱路径（强烈推荐）。框架OnloadHook会从
 
 **效果**：修改任务时，模型不用再"吐"那几千行 SQL——它只输出脚本路径，全文由框架在后台对齐。「长文本走文件路径，修改任务的工具调用输出 token 直接降约 90%」的落地机制；长 SQL 从此彻底从对话历史和 token 消耗里"隐身"。
 
-![](./assets/Agent 治理：用 Hook 堵住 LLM 的偷懒、越权与失忆/1d7d0b5856cffbb5f0134ff4e06616a5.png)
+![](<./assets/Agent 治理：用 Hook 堵住 LLM 的偷懒、越权与失忆/1d7d0b5856cffbb5f0134ff4e06616a5.png>)
 
 3.3 多重防线全景（对应数仓四阶段）
 
 这套护栏不是单点，而是贯穿 Skills 编排篇那条流水线的多重防线：
 
-![](./assets/Agent 治理：用 Hook 堵住 LLM 的偷懒、越权与失忆/e5f3251f0195e873d2a65e3a40c45cd1.png)
+![](<./assets/Agent 治理：用 Hook 堵住 LLM 的偷懒、越权与失忆/e5f3251f0195e873d2a65e3a40c45cd1.png>)
 
 每一阶段的防线，正好对应 Skills 编排篇里那条数仓开发流水线（设计→拆解→执行→验证四阶段）的各个阶段——**Hook 在框架层做物理兜底**。
 
@@ -221,7 +221,7 @@ deco:
 
 **守门流程**——Agent 每次要调工具，框架都会先过一道「门卫」：
 
-![](./assets/Agent 治理：用 Hook 堵住 LLM 的偷懒、越权与失忆/bfb1edeb43129ed2a98ce0ed292914b1.png)
+![](<./assets/Agent 治理：用 Hook 堵住 LLM 的偷懒、越权与失忆/bfb1edeb43129ed2a98ce0ed292914b1.png>)
 
 无论 Agent 是自作主张还是被诱导，只要没有人工确认这一步，`packCommit` / `deployCommit` 在框架层就**物理走不通**。§4.3 配图展开与用户握手的完整时序。
 
@@ -283,7 +283,7 @@ DECO 的 HITL 是在 ADK 较早版本上自研的。如今 HITL 已是主流 Age
 
 这个范式的核心是把「副作用采集」和「上下文注入」解耦成两段，各管各的：
 
-![](./assets/Agent 治理：用 Hook 堵住 LLM 的偷懒、越权与失忆/23c64930bf39f45a7f1807af5bc803f6.png)
+![](<./assets/Agent 治理：用 Hook 堵住 LLM 的偷懒、越权与失忆/23c64930bf39f45a7f1807af5bc803f6.png>)
 
 这样做的好处是双重的：
 
@@ -306,7 +306,7 @@ DECO 的 HITL 是在 ADK 较早版本上自研的。如今 HITL 已是主流 Age
 
 **治理做法**：
 
-![](./assets/Agent 治理：用 Hook 堵住 LLM 的偷懒、越权与失忆/e348b6c8b95eb2b32bade9d7ed63b0ef.png)
+![](<./assets/Agent 治理：用 Hook 堵住 LLM 的偷懒、越权与失忆/e348b6c8b95eb2b32bade9d7ed63b0ef.png>)
 
 判定「改表」语义：`RiskAnalysisHook` 挂在 `afterTool` 上，不从工具名硬判断——它看工具调用入参：**带了 `tableId` 参数的 `upsertTable` 就是改表**（新建表不带 `tableId`）。新建表语义直接跳过，不触发风险分析。
 
@@ -332,7 +332,7 @@ DECO 的 HITL 是在 ADK 较早版本上自研的。如今 HITL 已是主流 Age
 
 **治理做法**：
 
-![](./assets/Agent 治理：用 Hook 堵住 LLM 的偷懒、越权与失忆/2edcc85e282e9c423f1568ae28453a35.png)
+![](<./assets/Agent 治理：用 Hook 堵住 LLM 的偷懒、越权与失忆/2edcc85e282e9c423f1568ae28453a35.png>)
 
 前端渲染：Attachment 注入的不只是文本——预签名 URL 被写成结构化 JSON，前端据此渲染内联图片。用户无需点按钮、不必翻沙箱目录，**图直接出现在对话流里**。
 
@@ -363,7 +363,7 @@ DECO 的 HITL 是在 ADK 较早版本上自研的。如今 HITL 已是主流 Age
 
 DECO 这套机制的特殊之处：**它不是「存储 → 读取」的被动模式，而是「事件 → 采集 → 注入」的主动流水线**。Hook 不是等着 LLM 来查 state，而是主动把结论 push 进下一轮 prompt——这意味着即使 LLM 完全不知道 state 里有风险分析结果，Attachment 也会让它「看到」。
 
-![](./assets/Agent 治理：用 Hook 堵住 LLM 的偷懒、越权与失忆/db0628096d3ce7d9d09431f404e129bd.png)
+![](<./assets/Agent 治理：用 Hook 堵住 LLM 的偷懒、越权与失忆/db0628096d3ce7d9d09431f404e129bd.png>)
 
 一句话：Hook → state → Attachment 闭环，把「LLM 需要主动查」的操作降维为「框架主动 push」——LLM 不再是「需要查的就不查」，而是「不管想不想查都会被喂到嘴边」。
 
@@ -371,7 +371,7 @@ DECO 这套机制的特殊之处：**它不是「存储 → 读取」的被动�
 
 三、四两节纵深拆解了两个深度案例——长文本读写两侧 offload 和 HITL 门禁。但同一套 Hook 链（`beforeModel`/`afterModel`/`beforeTool`/`afterTool`/`onRunEvent` 等切面）上，DECO 实际挂了**十余个 Hook**，覆盖可观测、前端实时刷新、上下文联动、业务事件、沙箱环境等横切关注点。这一节从纵深拉回横展，展现 Hook 体系的完整生态。它们都遵循同一条原则：**不改业务循环、不动工具实现，把横切逻辑挂在切面上**。
 
-![](./assets/Agent 治理：用 Hook 堵住 LLM 的偷懒、越权与失忆/14d5d4c147e6dd9667e6c0b6be4e561c.png)
+![](<./assets/Agent 治理：用 Hook 堵住 LLM 的偷懒、越权与失忆/14d5d4c147e6dd9667e6c0b6be4e561c.png>)
 
 | 分类 | Hook | 挂载点 | 职责 |
 | --- | --- | --- | --- |
@@ -420,6 +420,6 @@ DECO 这套机制的特殊之处：**它不是「存储 → 读取」的被动�
 
 **一句话总结就是：prompt 定意图，Skill 定规矩，框架 Hook 定边界——能用确定性兜底的，别交给模型。**
 
-![](./assets/Agent 治理：用 Hook 堵住 LLM 的偷懒、越权与失忆/366862c98fc42b63e04ea33820fbb5c7.gif)
+![](<./assets/Agent 治理：用 Hook 堵住 LLM 的偷懒、越权与失忆/366862c98fc42b63e04ea33820fbb5c7.gif>)
 
-![](./assets/Agent 治理：用 Hook 堵住 LLM 的偷懒、越权与失忆/1ddf1687e526c8734304b339ac51fb69.png)
+![](<./assets/Agent 治理：用 Hook 堵住 LLM 的偷懒、越权与失忆/1ddf1687e526c8734304b339ac51fb69.png>)

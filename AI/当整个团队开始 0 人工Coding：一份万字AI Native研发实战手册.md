@@ -6,7 +6,7 @@
 ---
 
 
-![](./assets/当整个团队开始 0 人工Coding：一份万字AI Native研发实战手册/c1c2db5889092a74bee928b3c104b62f.gif)
+![](<./assets/当整个团队开始 0 人工Coding：一份万字AI Native研发实战手册/c1c2db5889092a74bee928b3c104b62f.gif>)
 
 作者：binxiong
 
@@ -36,7 +36,7 @@
 
 #### 当前研发用 AI 的真实画面
 
-![](./assets/当整个团队开始 0 人工Coding：一份万字AI Native研发实战手册/0894a328b9ed8d5d0f9dd08d9e8bbf8b.png)
+![](<./assets/当整个团队开始 0 人工Coding：一份万字AI Native研发实战手册/0894a328b9ed8d5d0f9dd08d9e8bbf8b.png>)
 
 我总结了**四大痛点**，几乎每个用 AI 写代码的人都会踩到：
 
@@ -84,7 +84,7 @@
 
 我们把整个代码开发流程压缩到了**三个指令**：
 
-![](./assets/当整个团队开始 0 人工Coding：一份万字AI Native研发实战手册/9857f9a519a1cb2a1776ceb21ed93cd7.png)
+![](<./assets/当整个团队开始 0 人工Coding：一份万字AI Native研发实战手册/9857f9a519a1cb2a1776ceb21ed93cd7.png>)
 
 ##### Step 1：/opsx:propose — 先想清楚，再动手
 
@@ -136,7 +136,7 @@ MR 通过后执行：
 
 实际项目中，我们把核心三步扩展成了更严谨的六步：
 
-![](./assets/当整个团队开始 0 人工Coding：一份万字AI Native研发实战手册/ea92ea79167d792b93cb2c821f7103a7.png)
+![](<./assets/当整个团队开始 0 人工Coding：一份万字AI Native研发实战手册/ea92ea79167d792b93cb2c821f7103a7.png>)
 
 **关键卡点**：Step 2 的 Review 是质量的生命线。`tasks.md` 建议控制在 **15 项以内**，避免 AI 因上下文过长产生幻觉。
 
@@ -203,7 +203,7 @@ Skills 是团队沉淀的标准化操作流程（SOP），封装成 AI 可复用
 
 以一个典型的代码开发任务为例：
 
-![](./assets/当整个团队开始 0 人工Coding：一份万字AI Native研发实战手册/0b38aedfcf1e9a8fe4bb6a834a8d2721.png)
+![](<./assets/当整个团队开始 0 人工Coding：一份万字AI Native研发实战手册/0b38aedfcf1e9a8fe4bb6a834a8d2721.png>)
 
 **三者的关系可以用一句话概括：知识库让 AI "知道"我们的项目，MCP 让 AI "连接"我们的工具，Skills 让 AI "掌握"我们的方法。**
 
@@ -634,6 +634,6 @@ Review 人员在审查 MR 时要同时看**代码**和**规划文档**：
 | MR 通过后 | `/opsx:archive [变更名称]` |
 | 前后端联动 | 父目录启动 CLI → `/opsx:propose` 一次性规划 |
 
-![](./assets/当整个团队开始 0 人工Coding：一份万字AI Native研发实战手册/366862c98fc42b63e04ea33820fbb5c7.gif)
+![](<./assets/当整个团队开始 0 人工Coding：一份万字AI Native研发实战手册/366862c98fc42b63e04ea33820fbb5c7.gif>)
 
-![](./assets/当整个团队开始 0 人工Coding：一份万字AI Native研发实战手册/1ddf1687e526c8734304b339ac51fb69.png)
+![](<./assets/当整个团队开始 0 人工Coding：一份万字AI Native研发实战手册/1ddf1687e526c8734304b339ac51fb69.png>)

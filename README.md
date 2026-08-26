@@ -4,12 +4,12 @@
 
 ## 内容导航
 
-| 目录 | 内容 | 快速入口 |
-| --- | --- | --- |
-| [`AI`](AI/) | AI Coding、Agent 工程、评测、治理、Skills 与 Harness Engineering 等主题文章 | [浏览文章](AI/) |
-| [`ai-agent-book`](ai-agent-book/) | AI Agent 中文书稿，涵盖上下文工程、记忆、工具、评估、多模态与多 Agent 协作等主题 | [从引言开始](ai-agent-book/book/introduction.md) |
-| [`claude-blog-sync`](claude-blog-sync/) | Claude Blog 抓取、增量归档与翻译工具，以及 2026 年技术文章中文译文 | [中文文章总目录](<claude-blog-sync/Claude博客-2026年技术文章-中文/2026-index.md>) · [工具说明](claude-blog-sync/README.md) |
-| [`learn-claude-code-main`](learn-claude-code-main/) | 从 Agent Loop 到 MCP Plugin 的 20 个渐进式 Claude Code / Agent Harness 实作章节 | [中文课程说明](learn-claude-code-main/README-zh.md) |
+| 目录                                                  | 内容                                                                   | 快速入口                                                                                                   |
+| --------------------------------------------------- | -------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------ |
+| [`AI`](AI/)                                         | AI Coding、Agent 工程、评测、治理、Skills 与 Harness Engineering 等主题文章          | [浏览文章](AI/)                                                                                            |
+| [`ai-agent-book`](ai-agent-book/)                   | AI Agent 中文书稿，涵盖上下文工程、记忆、工具、评估、多模态与多 Agent 协作等主题                     | [从引言开始](ai-agent-book/book/introduction.md)                                                            |
+| [`claude-blog-sync`](claude-blog-sync/)             | Claude Blog 抓取、增量归档与翻译工具，以及 2026 年技术文章中文译文                           | [中文文章总目录](<claude-blog-sync/Claude博客-2026年技术文章-中文/2026-index.md>) · [工具说明](claude-blog-sync/README.md) |
+| [`learn-claude-code-main`](learn-claude-code-main/) | 从 Agent Loop 到 MCP Plugin 的 20 个渐进式 Claude Code / Agent Harness 实作章节 | [中文课程说明](learn-claude-code-main/README-zh.md)                                                          |
 
 ## 仓库结构
 

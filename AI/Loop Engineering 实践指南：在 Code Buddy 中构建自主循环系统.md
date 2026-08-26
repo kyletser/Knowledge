@@ -6,7 +6,7 @@
 ---
 
 
-![](./assets/Loop Engineering 实践指南：在 Code Buddy 中构建自主循环系统/c1c2db5889092a74bee928b3c104b62f.gif)
+![](<./assets/Loop Engineering 实践指南：在 Code Buddy 中构建自主循环系统/c1c2db5889092a74bee928b3c104b62f.gif>)
 
 作者：eliqiao
 
@@ -449,6 +449,6 @@ Loop Engineering 的核心不是某个具体工具，而是一种**系统设计�
 
 从"一问一答"到"设定目标、自动循环"，这是 AI 辅助开发从工具到伙伴的质变。而 Loop Engineering 的实践者，正是这一质变的设计师。
 
-![](./assets/Loop Engineering 实践指南：在 Code Buddy 中构建自主循环系统/366862c98fc42b63e04ea33820fbb5c7.gif)
+![](<./assets/Loop Engineering 实践指南：在 Code Buddy 中构建自主循环系统/366862c98fc42b63e04ea33820fbb5c7.gif>)
 
-![](./assets/Loop Engineering 实践指南：在 Code Buddy 中构建自主循环系统/1ddf1687e526c8734304b339ac51fb69.png)
+![](<./assets/Loop Engineering 实践指南：在 Code Buddy 中构建自主循环系统/1ddf1687e526c8734304b339ac51fb69.png>)

@@ -6,7 +6,7 @@
 ---
 
 
-![](./assets/腾讯WorkBuddy实践：如何把Agent做成可用产品/c1c2db5889092a74bee928b3c104b62f.gif)
+![](<./assets/腾讯WorkBuddy实践：如何把Agent做成可用产品/c1c2db5889092a74bee928b3c104b62f.gif>)
 
 我们总以为，把 Agent 做好，关键在于换一个更强的模型，或者把提示词写得更长、更细。
 
@@ -42,7 +42,7 @@ WorkBuddy如何把Agent做成可用产品
 
 输出 = 模型 (系统提示词 + 工具 + 会话历史 + 其他上下文 + 用户指令)
 
-![](./assets/腾讯WorkBuddy实践：如何把Agent做成可用产品/81a3726f1b2550e4251c714960aafac8.png)
+![](<./assets/腾讯WorkBuddy实践：如何把Agent做成可用产品/81a3726f1b2550e4251c714960aafac8.png>)
 
 图：模型调用抽象
 
@@ -62,7 +62,7 @@ WorkBuddy如何把Agent做成可用产品
 
 工具调用（也常叫 function call、Tool Call）是模型与外部系统之间的结构化协议：模型负责生成调用请求，Agent 负责执行。
 
-![](./assets/腾讯WorkBuddy实践：如何把Agent做成可用产品/5fb7b18c2cd56a6d68775e756d8dbd7e.jpg)
+![](<./assets/腾讯WorkBuddy实践：如何把Agent做成可用产品/5fb7b18c2cd56a6d68775e756d8dbd7e.jpg>)
 
 图：工具调用流程
 
@@ -86,7 +86,7 @@ WorkBuddy如何把Agent做成可用产品
 
 下图展示了一次工具调用的完整执行过程：用户提出查询请求后，模型根据工具定义生成工具调用；Agent 收到请求后校验参数和权限，再去获取实时的数据；工具返回结果后，模型读取工具执行结果，并基于结果生成最终回答。
 
-![](./assets/腾讯WorkBuddy实践：如何把Agent做成可用产品/950ed5633e878e488783d9661e3f7574.jpg)
+![](<./assets/腾讯WorkBuddy实践：如何把Agent做成可用产品/950ed5633e878e488783d9661e3f7574.jpg>)
 
 图：工具执行过程示例
 
@@ -96,7 +96,7 @@ WorkBuddy如何把Agent做成可用产品
 
 有了工具调用，Agent 具备执行能力，但还缺少稳定的工作角色。同一个模型既能写诗也能改代码、查数据；WorkBuddy 需要它在每次运行中都明确：自己是什么产品、能做什么、按什么原则工作、什么情况必须停下来询问用户。
 
-![](./assets/腾讯WorkBuddy实践：如何把Agent做成可用产品/81f298f69e417bab41d2f7093c62872e.jpg)
+![](<./assets/腾讯WorkBuddy实践：如何把Agent做成可用产品/81f298f69e417bab41d2f7093c62872e.jpg>)
 
 图：System Prompt 的作用
 
@@ -128,7 +128,7 @@ MCP 试图解决的是外部能力接入的标准化问题。
 
 Anthropic 在 2024 年底发布了开放协议 **Model Context Protocol（MCP）**，用统一方式连接 AI 应用和外部数据源、工具。它为 AI 应用接入外部能力提供统一接口，Agent 不需要分别适配每个系统的调用方式。
 
-![](./assets/腾讯WorkBuddy实践：如何把Agent做成可用产品/bfb027a0c1b8b0327ea2a1401656172a.jpg)
+![](<./assets/腾讯WorkBuddy实践：如何把Agent做成可用产品/bfb027a0c1b8b0327ea2a1401656172a.jpg>)
 
 图：MCP 统一接入
 
@@ -146,7 +146,7 @@ Anthropic 在 2024 年底发布了开放协议 **Model Context Protocol（MCP�
 
 运行结构上，MCP 有三个角色：承载 Agent 的产品（如 WorkBuddy）、负责建连和发请求的 MCP Client、对外暴露能力的 MCP Server。MCP 统一的是连接协议，Server 背后仍可以是 REST、数据库、SDK，Agent 不需要理解这些差异。
 
-![](./assets/腾讯WorkBuddy实践：如何把Agent做成可用产品/2fe58610fc41458abda19a50bc15d947.jpg)
+![](<./assets/腾讯WorkBuddy实践：如何把Agent做成可用产品/2fe58610fc41458abda19a50bc15d947.jpg>)
 
 图：MCP 运行结构
 
@@ -168,7 +168,7 @@ Karpathy 在《Software Is Changing (Again)》里指出，Agent 是一类新的�
 
 **Tool 负责“一个动作”，Skill 负责“一类任务的做法”。**
 
-![](./assets/腾讯WorkBuddy实践：如何把Agent做成可用产品/20386b24388a1c6134b9dd5d9a91c251.jpg)
+![](<./assets/腾讯WorkBuddy实践：如何把Agent做成可用产品/20386b24388a1c6134b9dd5d9a91c251.jpg>)
 
 图：Skill 的作用
 
@@ -180,7 +180,7 @@ MCP 负责连接外部系统，Skill 负责保存任务流程。但真实场景�
 
 Plugin 解决的是“能力组合如何安装和分发”的问题。它把多种相关能力组合成可安装、可分发的单位。
 
-![](./assets/腾讯WorkBuddy实践：如何把Agent做成可用产品/f8422d358529cbdd60dbfcaaa7bddb75.jpg)
+![](<./assets/腾讯WorkBuddy实践：如何把Agent做成可用产品/f8422d358529cbdd60dbfcaaa7bddb75.jpg>)
 
 图：Plugin 打包
 
@@ -207,7 +207,7 @@ Plugin: team-dev-workflow├─ MCP：读写 Issue、MR、构建结果和内部�
 
 因此，设计一个外接能力时，不能只问“能不能接进来”，还要判断它更适合哪种产品形态。不同能力的边界、更新频率、权限风险、上下文成本和复用方式不同，适合的接入方式也不同。
 
-![](./assets/腾讯WorkBuddy实践：如何把Agent做成可用产品/996cfe90b163728b93d05fe2a7135bf8.jpg)
+![](<./assets/腾讯WorkBuddy实践：如何把Agent做成可用产品/996cfe90b163728b93d05fe2a7135bf8.jpg>)
 
 图：外接能力形态选择
 
@@ -242,7 +242,7 @@ WorkBuddy 大致会进行以下步骤：
 >
 > → 生成大纲
 
-![](./assets/腾讯WorkBuddy实践：如何把Agent做成可用产品/a8a11a6a1b89ae8f0b7995370a47ae5b.jpg)
+![](<./assets/腾讯WorkBuddy实践：如何把Agent做成可用产品/a8a11a6a1b89ae8f0b7995370a47ae5b.jpg>)
 
 图：一次完整任务的信息流
 
@@ -268,7 +268,7 @@ WorkBuddy 大致会进行以下步骤：
 
 整个过程中，每次观察到的结果都被放到了模型的上下文里，主上下文的长度逐渐增大。所以我们必须要进行上下文管理，也就是 context engineering。
 
-![](./assets/腾讯WorkBuddy实践：如何把Agent做成可用产品/66f830bbf6a4a74d9bb46e20fa92f613.png)
+![](<./assets/腾讯WorkBuddy实践：如何把Agent做成可用产品/66f830bbf6a4a74d9bb46e20fa92f613.png>)
 
 图：ReAct 多轮循环
 
@@ -278,7 +278,7 @@ WorkBuddy 大致会进行以下步骤：
 
 在一次模型决策前，设计哪些信息进入上下文、以什么形式进入、放在什么位置、何时更新或移出，以提高模型做出正确下一步决策的概率。
 
-![](./assets/腾讯WorkBuddy实践：如何把Agent做成可用产品/bfd5649c5bbfdb3f6490a16eccf70eef.jpg)
+![](<./assets/腾讯WorkBuddy实践：如何把Agent做成可用产品/bfd5649c5bbfdb3f6490a16eccf70eef.jpg>)
 
 图：Context Engineering 的五类动作
 
@@ -300,7 +300,7 @@ WorkBuddy 大致会进行以下步骤：
 
 ## Prompt Cache：上下文管理的第一要义
 
-![](./assets/腾讯WorkBuddy实践：如何把Agent做成可用产品/5a4042908e16481b0c02480c2aab6dea.png)
+![](<./assets/腾讯WorkBuddy实践：如何把Agent做成可用产品/5a4042908e16481b0c02480c2aab6dea.png>)
 
 图：Prompt Cache 前缀复用
 
@@ -322,7 +322,7 @@ WorkBuddy 大致会进行以下步骤：
 
 ## 渐进式加载：长结果和大工具集
 
-![](./assets/腾讯WorkBuddy实践：如何把Agent做成可用产品/b2942a3e8972bdb317b0272cd08edce6.jpg)
+![](<./assets/腾讯WorkBuddy实践：如何把Agent做成可用产品/b2942a3e8972bdb317b0272cd08edce6.jpg>)
 
 图：渐进式加载
 
@@ -368,7 +368,7 @@ Skill 也用同样机制，先看名称和描述，确认适用后再读完整 
 
 ## 为什么没有把 Procedural Memory 放进长期记忆
 
-![](./assets/腾讯WorkBuddy实践：如何把Agent做成可用产品/7cd96fae4d156d540b5c0343b6b901c3.png)
+![](<./assets/腾讯WorkBuddy实践：如何把Agent做成可用产品/7cd96fae4d156d540b5c0343b6b901c3.png>)
 
 图：陈述性记忆 vs 程序性记忆
 
@@ -392,7 +392,7 @@ Skill 也用同样机制，先看名称和描述，确认适用后再读完整 
 
 ## Memory 的作用域分层与注入时机
 
-![](./assets/腾讯WorkBuddy实践：如何把Agent做成可用产品/2b9c28761c20444c95887ba82c5e1074.jpg)
+![](<./assets/腾讯WorkBuddy实践：如何把Agent做成可用产品/2b9c28761c20444c95887ba82c5e1074.jpg>)
 
 图：记忆作用域分层
 
@@ -424,7 +424,7 @@ Skill 也用同样机制，先看名称和描述，确认适用后再读完整 
 
 这些是 Harness Engineering 要解决的问题。Harness 可以按构建者和使用者分成两层：
 
-![](./assets/腾讯WorkBuddy实践：如何把Agent做成可用产品/ee2c5b571be30487ac9f84cb05ea585d.png)
+![](<./assets/腾讯WorkBuddy实践：如何把Agent做成可用产品/ee2c5b571be30487ac9f84cb05ea585d.png>)
 
 图：Harness 的两层同心圆
 
@@ -434,7 +434,7 @@ Skill 也用同样机制，先看名称和描述，确认适用后再读完整 
 
 Harness 一词原指套在马身上的整套装备。从词源出发可以拆出三类能力，对应 Harness 要解决的三个方面：
 
-![](./assets/腾讯WorkBuddy实践：如何把Agent做成可用产品/0f29acc3dbe59c45d219c5076cab94a3.jpg)
+![](<./assets/腾讯WorkBuddy实践：如何把Agent做成可用产品/0f29acc3dbe59c45d219c5076cab94a3.jpg>)
 
 图：驾驭 / 约束 / 整合
 
@@ -450,7 +450,7 @@ Harness 一词原指套在马身上的整套装备。从词源出发可以拆出
 
 ## 在讨论 WorkBuddy 的做法之前，先看三家有代表性的实践：OpenAI、Anthropic 和 LangChain。
 
-![](./assets/腾讯WorkBuddy实践：如何把Agent做成可用产品/8cec28c582d07a25b541e4483f423b7c.jpg)
+![](<./assets/腾讯WorkBuddy实践：如何把Agent做成可用产品/8cec28c582d07a25b541e4483f423b7c.jpg>)
 
 图：OpenAI 实践
 
@@ -462,7 +462,7 @@ Harness 一词原指套在马身上的整套装备。从词源出发可以拆出
 
 WorkBuddy 的 Agent 在这一点上做了类似设计：执行较大任务时，先把目标拆解成结构化任务清单，并在推进过程中持续更新状态。它同时处理“一次承担过多 / 过早判定完成”和“上下文遗忘”两类问题——显式任务状态可以让 Agent 在长对话里恢复进度，也让用户更容易判断任务是否真的完成。
 
-![](./assets/腾讯WorkBuddy实践：如何把Agent做成可用产品/c6605169b141e636c1c9f522be656f62.jpg)
+![](<./assets/腾讯WorkBuddy实践：如何把Agent做成可用产品/c6605169b141e636c1c9f522be656f62.jpg>)
 
 图：跨会话任务交接
 
@@ -470,7 +470,7 @@ WorkBuddy 的 Agent 在这一点上做了类似设计：执行较大任务时，
 
 方案借鉴 GAN 的对抗评估思路，用 Claude Agent SDK 构建三个角色：Planner（把一句话需求展开成完整规格，定范围但不指定实现细节）、Generator（按 sprint 逐功能实现、用 git 版本控制、提交前先自检）、Evaluator（独立验收 Agent，用 Playwright 像真实用户一样操作运行中的应用，逐条核查、把 bug 定位到行号和原因后打回）。普通用户可以借鉴的点：分离执行和验收（验收角色可用不同模型，或在 WorkBuddy 里用 Teams 分工）、把标准写进规则文件、先确认需求再执行、随模型升级精简约束。
 
-![](./assets/腾讯WorkBuddy实践：如何把Agent做成可用产品/2b599dee55369064021b7e845885763b.jpg)
+![](<./assets/腾讯WorkBuddy实践：如何把Agent做成可用产品/2b599dee55369064021b7e845885763b.jpg>)
 
 图：Planner / Generator / Evaluator
 
@@ -490,7 +490,7 @@ WorkBuddy 构建良好的 Harness 有两个目标：**提高 Agent 首次执行�
 
 WorkBuddy 的原则是：**能用计算型信号解决的问题，优先交给确定性程序；需要语义判断的问题，再交给审查 Agent。**反馈也要按时机分层：快速检查尽量左移到编辑后、提交前或 Agent 自我纠正循环中；更昂贵的架构审查、详细代码审查、端到端验证放到集成前后；持续漂移和运行时健康则交给周期性传感器，例如死代码扫描、覆盖率质量分析、依赖风险、延迟、错误率、可用性 SLO 和日志异常。这样 Harness 不只是一组规则，而是一套持续运行的控制系统。
 
-![](./assets/腾讯WorkBuddy实践：如何把Agent做成可用产品/59a3e8c9f4619d7c047e94cab40482de.jpg)
+![](<./assets/腾讯WorkBuddy实践：如何把Agent做成可用产品/59a3e8c9f4619d7c047e94cab40482de.jpg>)
 
 图：Harness 五层结构
 
@@ -498,13 +498,13 @@ WorkBuddy 的原则是：**能用计算型信号解决的问题，优先交给�
 
 **1. 运行环境层：Agent 在哪里执行。**文件系统、Shell / Bash、Sandbox、Browser、MCP / Connectors、权限边界 / Approval Gate、Allowlist/ denylist。这一层用户通常感知不到，但缺少任何一项，上面几层都难以稳定运行。LangChain 指出，文件系统是 Agent 最基础的运行环境，它支撑了持久状态、跨会话工作和多 Agent 协作。
 
-![](./assets/腾讯WorkBuddy实践：如何把Agent做成可用产品/0b47bd87a34e50315066c0e69793a3e7.jpg)
+![](<./assets/腾讯WorkBuddy实践：如何把Agent做成可用产品/0b47bd87a34e50315066c0e69793a3e7.jpg>)
 
 图：引导层
 
 **2. 引导层（Feedforward）：Agent 开始前掌握什么。**在执行前提供必要信息和约束，提高首次正确率。包括：项目上下文（项目概况、目录层级、关键依赖——早期模型不会主动探索代码库，可能在根目录写错文件）、环境上下文（操作系统、Shell、时间、时区、地理位置、IDE 主题、产品语言、已装 Skills、已连 Connectors）、规则与风格（不同模型不同倾向）、工具使用规则（独立的搜索 / 读取可并行、改文件前先读、路径不明先搜、长任务先拆 Todo）、Skills 和规则文件（把隐性知识保存成 Agent 能读到的内容）、上下文结构与 Prompt Cache（保持稳定前缀、追加动态内容、按需加载工具）。
 
-![](./assets/腾讯WorkBuddy实践：如何把Agent做成可用产品/7af47ab9a546ee627f528a0ed892ef28.jpg)
+![](<./assets/腾讯WorkBuddy实践：如何把Agent做成可用产品/7af47ab9a546ee627f528a0ed892ef28.jpg>)
 
 图：反馈层
 
@@ -528,7 +528,7 @@ WorkBuddy 的原则是：**能用计算型信号解决的问题，优先交给�
 
 借用 OpenAI Codex 实验总结的四类组件，可以把 WorkBuddy 团队的现有实践归入同一框架。
 
-![](./assets/腾讯WorkBuddy实践：如何把Agent做成可用产品/25afc717008c688bb3b8d435aee90c8d.jpg)
+![](<./assets/腾讯WorkBuddy实践：如何把Agent做成可用产品/25afc717008c688bb3b8d435aee90c8d.jpg>)
 
 图：使用者视角的四类组件
 
@@ -561,7 +561,7 @@ Harness 定义 Agent 的环境、权限、反馈和纠正机制；Loop 定义任
 
 一个可用的 Loop 至少需要这些组件：触发器（Trigger / Automation）、独立执行环境（Isolated Workspace / Worktree）、Skills、Tools / Connectors / MCP、Sub-agents、Memory / Durable Artifacts、Sensors / Evals、Stop Conditions / Budget。
 
-![](./assets/腾讯WorkBuddy实践：如何把Agent做成可用产品/d1f359275a7c568f33c42aafcd1cfe6e.jpg)
+![](<./assets/腾讯WorkBuddy实践：如何把Agent做成可用产品/d1f359275a7c568f33c42aafcd1cfe6e.jpg>)
 
 图：一个完整的 Loop
 
@@ -581,7 +581,7 @@ Harness 定义 Agent 的环境、权限、反馈和纠正机制；Loop 定义任
 
 ## 功能和业务正确性的验证缺口
 
-![](./assets/腾讯WorkBuddy实践：如何把Agent做成可用产品/eab580a6061b3a85b118a98640499972.jpg)
+![](<./assets/腾讯WorkBuddy实践：如何把Agent做成可用产品/eab580a6061b3a85b118a98640499972.jpg>)
 
 图：业务正确性验证缺口
 
@@ -669,6 +669,6 @@ Harness 应优先覆盖重复、确定、可验证的工作；探索和业务判
 
 [www.workbuddy.cn](https://www.workbuddy.cn/)
 
-![](./assets/腾讯WorkBuddy实践：如何把Agent做成可用产品/366862c98fc42b63e04ea33820fbb5c7.gif)
+![](<./assets/腾讯WorkBuddy实践：如何把Agent做成可用产品/366862c98fc42b63e04ea33820fbb5c7.gif>)
 
-![](./assets/腾讯WorkBuddy实践：如何把Agent做成可用产品/1ddf1687e526c8734304b339ac51fb69.png)
+![](<./assets/腾讯WorkBuddy实践：如何把Agent做成可用产品/1ddf1687e526c8734304b339ac51fb69.png>)

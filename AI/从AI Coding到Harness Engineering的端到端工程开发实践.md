@@ -6,7 +6,7 @@
 ---
 
 
-![](./assets/从AI Coding到Harness Engineering的端到端工程开发实践/c1c2db5889092a74bee928b3c104b62f.gif)
+![](<./assets/从AI Coding到Harness Engineering的端到端工程开发实践/c1c2db5889092a74bee928b3c104b62f.gif>)
 
 作者：zimingxing、kinglongli 、yifhao
 
@@ -24,7 +24,7 @@
 
 为了避免每次重复输入这些信息，我们会将团队的一些背景知识、代码规范、生成规则等沉淀为文档或 rules，在每次对话中塞到上下文带给 AI。
 
-![](./assets/从AI Coding到Harness Engineering的端到端工程开发实践/6a9da2d4e07fc1456af1138796114b18.png)
+![](<./assets/从AI Coding到Harness Engineering的端到端工程开发实践/6a9da2d4e07fc1456af1138796114b18.png>)
 
 随着项目迭代，知识背景、规则会越来越多，每次启动上下文窗口，还没输入需求就已经塞了很大一部分内容。
 
@@ -48,7 +48,7 @@
 
 应用宝活动平台的 Harness 工程，主要包含了两部分工程能力：知识库工程和基于知识库之上构建的端到端开发工程。
 
-![](./assets/从AI Coding到Harness Engineering的端到端工程开发实践/0d20f4cfa305834e15928ef0b9ee3546.png)
+![](<./assets/从AI Coding到Harness Engineering的端到端工程开发实践/0d20f4cfa305834e15928ef0b9ee3546.png>)
 
 知识库工程负责将散落在代码、文档、可观测系统中的工程知识，按照一定结构进行沉淀和更新，并提供给上层端到端开发工程消费。
 
@@ -79,7 +79,7 @@
 
 两者结合形成"AI 生产 + 人工补充 + AI 消费"的知识库体系，为 Harness 工程提供持续更新的知识信息。
 
-![](./assets/从AI Coding到Harness Engineering的端到端工程开发实践/059d3593d23d16b7971487c2c73e28a4.png)
+![](<./assets/从AI Coding到Harness Engineering的端到端工程开发实践/059d3593d23d16b7971487c2c73e28a4.png>)
 
 #### 3.1 整体目录结构
 
@@ -160,7 +160,7 @@ llm-knowledge/
 
 在我们的知识库工程中，同样是采用**渐进式分层加载+grep 的方式**来实现对结构化知识的检索，既能保证搜索的准确性，同时又能实现按需加载，节省 Token 消耗。
 
-![](./assets/从AI Coding到Harness Engineering的端到端工程开发实践/8c921736e3c68d4f2e005076b1259523.png)
+![](<./assets/从AI Coding到Harness Engineering的端到端工程开发实践/8c921736e3c68d4f2e005076b1259523.png>)
 
 当下的设计为：
 
@@ -189,7 +189,7 @@ llm-knowledge/
 
 同时，添加了 `log.md` 历史保护机制确保可审计性：每次生成都向 `log.md` 追加一条记录（含 `git_hash`、执行时间、变更摘要），严禁覆盖历史条目。即使某次生成出错，也能通过 `log.md` 结合 `git` 追溯到上次成功状态。
 
-![](./assets/从AI Coding到Harness Engineering的端到端工程开发实践/6f87c5f7a2a4c052431aa428642b4604.png)
+![](<./assets/从AI Coding到Harness Engineering的端到端工程开发实践/6f87c5f7a2a4c052431aa428642b4604.png>)
 
 目前，这套知识库工程已经覆盖了应用宝游戏后台包括活动、福利、商城、增长等在内的 4 个业务领域，涵盖 90 多个微服务，800+份结构化文档。
 
@@ -203,7 +203,7 @@ llm-knowledge/
 - **用 DAG + 多 Agent 并行替代单线程串行执行**：自动识别任务间的依赖关系，将任务编排为 DAG 拓扑结构，把同一层的任务分发给并发 agent 在隔离环境中同时开发，再统一收口，实现多任务的并行执行。
 - **打通从开发到提交工蜂代码全流程**：通过集成或者封装司内包括 TAPD、123、03、rick、伽利略、七彩石、无极等等各大平台的能力，打通整个需求实现中各个环节和外部依赖。
 
-![](./assets/从AI Coding到Harness Engineering的端到端工程开发实践/d5aabe312803361a5e023df427c9f5ee.png)
+![](<./assets/从AI Coding到Harness Engineering的端到端工程开发实践/d5aabe312803361a5e023df427c9f5ee.png>)
 
 #### 4.1 状态文件驱动：让流程脱离对话窗口而独立存在
 
@@ -224,7 +224,7 @@ llm-knowledge/
 
 每个子 Agent 在独立上下文中执行完毕后，将其执行结果写入状态文件的对应字段。主调度器不依赖对话记忆，而是直接读取状态文件来确定"现在到哪一步了、下一步该干什么"。状态文件落盘，实现流程可中断、可恢复、可观测。
 
-![](./assets/从AI Coding到Harness Engineering的端到端工程开发实践/65a8e324a1e78eaa2cbe25de946657a6.png)
+![](<./assets/从AI Coding到Harness Engineering的端到端工程开发实践/65a8e324a1e78eaa2cbe25de946657a6.png>)
 
 ##### 4.1.2 激活标志 + hook 机制：强制流程推进
 
@@ -234,7 +234,7 @@ llm-knowledge/
 - `SessionStart Hook`：跨会话断点可自动恢复
 - `SessionEnd Hook`：会话结束后清理残留状态，不污染下一个无关会话
 
-![](./assets/从AI Coding到Harness Engineering的端到端工程开发实践/23bfe94840121e922fe34da5b31541ae.png)
+![](<./assets/从AI Coding到Harness Engineering的端到端工程开发实践/23bfe94840121e922fe34da5b31541ae.png>)
 
 #### 4.2 专家 Agent 体系：每个专家只做一件事
 
@@ -283,7 +283,7 @@ llm-knowledge/
 
 我们定义了一个 `task-planner` 的 Agent，专门负责任务拆解与并发编排规划，其会根据需求文档和实现方案，按照接口、功能模块进行任务拆解，并针对每一个任务标注其与其他任务的依赖关系，以及预测需要修改的目录文件，并将所有任务列表按照依赖关系构建成 DAG 拓扑分层，同一层的内的任务可以并发执行。 主调度器会根据 `task-planner` 返回的拆解结果进行编排，并发执行的任务分配不同的 `worktree` 给到负责开发的 Agent，并在本轮所有开发 Agent 执行完成后，统一执行 `merge` 操作收口。
 
-![](./assets/从AI Coding到Harness Engineering的端到端工程开发实践/49f9d3a8a625d69bccc36c40aa48d062.png)
+![](<./assets/从AI Coding到Harness Engineering的端到端工程开发实践/49f9d3a8a625d69bccc36c40aa48d062.png>)
 
 ##### 4.3.2 Fork-Join：多需求的并行开发与统一收口
 
@@ -394,7 +394,7 @@ CR 环节，AI 除了会根据现有的代码规范对代码进行 CR 外，还�
 
 最近，Claude 发布的 Workflow 模式，也给我们带来了新的启发，团队也正在尝试将流程编排引入到这套工程实践中，将这套工程由原来 AI 自己根据状态文件实现流程串联，必要时由 AI call 起脚本调用的流程，改为由脚本实现流程串联，必要时由脚本 call 起 AI 调用的方式来实现。至于说到底哪种方式才是业界的标准答案，目前也没有定论，大家都在摸索，但方向是一致的——**让确定性的归脚本，让认知的归 AI**：
 
-![](./assets/从AI Coding到Harness Engineering的端到端工程开发实践/aee6b0e379403e9564de53d223c1b701.png)
+![](<./assets/从AI Coding到Harness Engineering的端到端工程开发实践/aee6b0e379403e9564de53d223c1b701.png>)
 
 #### 5.3 一些开放性思考
 
@@ -422,7 +422,7 @@ TDD 是软件工程中令人向往的开发模式，但在实际代码开发中�
 
 这套看板代码 100% 由 AI 通过对话式 Vibe Coding 生成，没有一个人去 CR 过它的代码，前端/后台/产品/运营，任何一个同学，只要有任何活动看板的需求，都可以在这上面通过对话的方式集成。
 
-![](./assets/从AI Coding到Harness Engineering的端到端工程开发实践/7ee1511288ba5619c3740e173620dd6b.png)![](./assets/从AI Coding到Harness Engineering的端到端工程开发实践/35d2349f94ac755837728f3a99eec1aa.png)
+![](<./assets/从AI Coding到Harness Engineering的端到端工程开发实践/7ee1511288ba5619c3740e173620dd6b.png>)![](<./assets/从AI Coding到Harness Engineering的端到端工程开发实践/35d2349f94ac755837728f3a99eec1aa.png>)
 
 这其中的区别在于：**看板这类"结果导向、容错率高、无强一致性要求"的系统，适合黑盒化；而核心在线业务系统，现阶段仍需要人守住架构这条线**。
 
@@ -448,6 +448,6 @@ APP图标一键启动，无需繁琐配置。交互设计极致还原Mac原生�
 
 📥 下载：<https://sj.qq.com/>
 
-![](./assets/从AI Coding到Harness Engineering的端到端工程开发实践/366862c98fc42b63e04ea33820fbb5c7.gif)
+![](<./assets/从AI Coding到Harness Engineering的端到端工程开发实践/366862c98fc42b63e04ea33820fbb5c7.gif>)
 
-![](./assets/从AI Coding到Harness Engineering的端到端工程开发实践/1ddf1687e526c8734304b339ac51fb69.png)
+![](<./assets/从AI Coding到Harness Engineering的端到端工程开发实践/1ddf1687e526c8734304b339ac51fb69.png>)

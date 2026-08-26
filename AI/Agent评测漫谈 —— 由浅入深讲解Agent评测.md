@@ -5,7 +5,7 @@
 
 ---
 
-![](./assets/Agent评测漫谈 —— 由浅入深讲解Agent评测/58272cc712ee65076211ce27409a9307.gif)
+![](<./assets/Agent评测漫谈 —— 由浅入深讲解Agent评测/58272cc712ee65076211ce27409a9307.gif>)
 
 > **导语**：
 > 点亮👆“☆”星标，不错过推送内容~
@@ -60,7 +60,7 @@
 
 评测方法会随着 AI 形态变化而变化，大致经历了三个阶段：
 
-![](./assets/Agent评测漫谈 —— 由浅入深讲解Agent评测/2fadad0094164e362f7a81d46a401603.png)
+![](<./assets/Agent评测漫谈 —— 由浅入深讲解Agent评测/2fadad0094164e362f7a81d46a401603.png>)
 
 传统机器学习更像在回答“算得准不准”。 大模型评测开始回答“模型能力强不强”。 而 Agent 评测真正要回答的是：
 
@@ -92,7 +92,7 @@
 
 Agent 的一次执行通常包含如下链路：
 
-![](./assets/Agent评测漫谈 —— 由浅入深讲解Agent评测/9f6898ccca88d2d78fc3ffe47611a35d.png)
+![](<./assets/Agent评测漫谈 —— 由浅入深讲解Agent评测/9f6898ccca88d2d78fc3ffe47611a35d.png>)
 
 只要其中任意一层出问题，最终效果都可能劣化。为了结果稳定，我们需要过程稳定。但如果日志系统只能看到“用户说了什么”和“最后回复了什么”，就几乎无法判断问题根因。正是基于“**我想看Case却发现没打日志**”这个朴素的问题，工业界发展出了 Trace 系统，将黑盒内部的逻辑推理过程进行全路径的披露，将所有影响模型输出的输入信息都记录下来。
 
@@ -108,11 +108,11 @@ Agent 的一次执行通常包含如下链路：
 
 有的同学会好奇，为什么一定要“搭桥”？这是因为Agent评测体系必须追求业务价值与评测指标之间的解释性。而Agent 评测的难点之一，是模型能力指标和业务结果指标之间有天然鸿沟。
 
-![](./assets/Agent评测漫谈 —— 由浅入深讲解Agent评测/cb29ecac4f14886698fe64edeca401e9.png)
+![](<./assets/Agent评测漫谈 —— 由浅入深讲解Agent评测/cb29ecac4f14886698fe64edeca401e9.png>)
 
 这两类指标不能直接映射，中间必须有一层面向任务系统的桥梁指标。我们提供一种分层思路如下：
 
-![](./assets/Agent评测漫谈 —— 由浅入深讲解Agent评测/524b2d86501a6193dd6d6f3e0882442c.png)
+![](<./assets/Agent评测漫谈 —— 由浅入深讲解Agent评测/524b2d86501a6193dd6d6f3e0882442c.png>)
 
 以 AI 搜索为例，业务可能关心DAU、留存和点击；搜索系统本身关心召回率和点击率；Agent 层则关心意图识别是否准确、检索是否有效、结果整合是否可信。
 
@@ -122,7 +122,7 @@ Agent 的一次执行通常包含如下链路：
 
 经过第一章的介绍，我们知道，Agent的核心目标就是要稳定地交付好的结果。行业内 Agent 评测大量借鉴了大模型评测的方法论，总体上可以拆成客观评测和主观评测：
 
-![](./assets/Agent评测漫谈 —— 由浅入深讲解Agent评测/ed2e738bad9eb70c106e1d4a2894909c.png)
+![](<./assets/Agent评测漫谈 —— 由浅入深讲解Agent评测/ed2e738bad9eb70c106e1d4a2894909c.png>)
 
 因此更现实的做法通常是：
 
@@ -140,7 +140,7 @@ Agent 的一次执行通常包含如下链路：
 
 - **人人一致**：1个“独裁者”好过10个“民主者”。需要一位强有力的角色，拉齐产品、运营、研发、QA的评测标准，遵循同一套评测体系，避免大家各自为政。不同评测员通过背靠背标注的方法拉齐标准。
 
-![](./assets/Agent评测漫谈 —— 由浅入深讲解Agent评测/7625611b175a0db2120c49aaae3a69e4.png)
+![](<./assets/Agent评测漫谈 —— 由浅入深讲解Agent评测/7625611b175a0db2120c49aaae3a69e4.png>)
 
 - **人机一致**：机器评测结果与人工评测结果保持一致，否则不置信。人机一致的意义在于规模化提效，以应对更大的业务流量。
 
@@ -156,7 +156,7 @@ Agent 的一次执行通常包含如下链路：
 
 案例一：如何评价初中生作文的好坏？（满分40分）
 
-![](./assets/Agent评测漫谈 —— 由浅入深讲解Agent评测/8fe757dac39cf651dbdf1f6bbfacc120.png)
+![](<./assets/Agent评测漫谈 —— 由浅入深讲解Agent评测/8fe757dac39cf651dbdf1f6bbfacc120.png>)
 
 案例二：以骑手外呼场景模型回复是否“口语化”举例
 
@@ -210,7 +210,7 @@ Agent 的一次执行通常包含如下链路：
 
 因此，当我们在特定垂域面临业务知识语料匮乏（或公网无公开高质数据）的挑战时，通过引入行业专家的知识输入来补足模型/Agent的能力，就成了破局的关键——尤其是在项目的冷启动阶段。
 
-![](./assets/Agent评测漫谈 —— 由浅入深讲解Agent评测/18f2b17d149a03e386d2619f54e5e228.png)
+![](<./assets/Agent评测漫谈 —— 由浅入深讲解Agent评测/18f2b17d149a03e386d2619f54e5e228.png>)
 
 呼应前文，评测的目的是回答“Agent好不好”，那么谁来定义“好不好”呢？靠最懂业务最有Sense的行业专家。
 
@@ -250,7 +250,7 @@ Agent 的一次执行通常包含如下链路：
 
 长程Agent（Long-horizon Agent）与短程Agent的区别，在于它如何处理“时间跨度带来的复杂性”：
 
-![](./assets/Agent评测漫谈 —— 由浅入深讲解Agent评测/b5e74636f4aaaae2dd9daaf979f06c97.png)
+![](<./assets/Agent评测漫谈 —— 由浅入深讲解Agent评测/b5e74636f4aaaae2dd9daaf979f06c97.png>)
 
 这些差异会为观测评测带来怎样的变化呢？
 
@@ -260,11 +260,11 @@ Agent 的一次执行通常包含如下链路：
 
 这类场景的共同特点是：Agent 更多是在“回答问题”，进行少量的系统操作，而不是“进入操作系统执行任务”。典型应用场景，例如AI搜索、客服机器人。此类Agent评测重点通常落在回答本身，例如：
 
-![](./assets/Agent评测漫谈 —— 由浅入深讲解Agent评测/8817e8f4399b92f97c79898b3be7d15b.png)
+![](<./assets/Agent评测漫谈 —— 由浅入深讲解Agent评测/8817e8f4399b92f97c79898b3be7d15b.png>)
 
 在过去1年的发展中图灵形成了成熟的解决方案，包括人工评测、机器评测，部分案例如下：
 
-![](./assets/Agent评测漫谈 —— 由浅入深讲解Agent评测/b6bf88d4193046ee10165e7c9eb3836a.png)
+![](<./assets/Agent评测漫谈 —— 由浅入深讲解Agent评测/b6bf88d4193046ee10165e7c9eb3836a.png>)
 
 ### | 3.2 长程Agent的观测评测
 
@@ -281,7 +281,7 @@ Agent 的一次执行通常包含如下链路：
 - **观测目标**：还原现场，精确定位，解决“我想看Case却发现没打日志”的问题
 - **评测目标**：回答Agent好不好，指出迭代方向
 
-![](./assets/Agent评测漫谈 —— 由浅入深讲解Agent评测/8b746914e91345df49b8dc7c542b8a9a.png)
+![](<./assets/Agent评测漫谈 —— 由浅入深讲解Agent评测/8b746914e91345df49b8dc7c542b8a9a.png>)
 
 **3.2.2 Skill评测**
 
@@ -291,7 +291,7 @@ Agent 的一次执行通常包含如下链路：
 
 总结起来目前龙虾和Skill相关需求主要 广义的运营提效 场景，大致可以分成三类：
 
-![](./assets/Agent评测漫谈 —— 由浅入深讲解Agent评测/2d59a2219f5265f03a4c6d65484a8368.png)
+![](<./assets/Agent评测漫谈 —— 由浅入深讲解Agent评测/2d59a2219f5265f03a4c6d65484a8368.png>)
 
 用户规模正在从少量专业角色扩展到更广人群
 
@@ -316,11 +316,11 @@ Agent 的一次执行通常包含如下链路：
 
 为了方便大家理解，我们将Skill全生命周期拆解如下：
 
-![](./assets/Agent评测漫谈 —— 由浅入深讲解Agent评测/0c2dd55e38f8bf2cfcec0383795e32e5.png)
+![](<./assets/Agent评测漫谈 —— 由浅入深讲解Agent评测/0c2dd55e38f8bf2cfcec0383795e32e5.png>)
 
 综上，Skill评测的痛点总体可以拆解成三个方面：
 
-![](./assets/Agent评测漫谈 —— 由浅入深讲解Agent评测/81da060ba96cb6a093c486d0787ea800.png)
+![](<./assets/Agent评测漫谈 —— 由浅入深讲解Agent评测/81da060ba96cb6a093c486d0787ea800.png>)
 
 **面向Task的评测**
 
@@ -328,7 +328,7 @@ Agent 的一次执行通常包含如下链路：
 
 我们综合了Anthropic以及开源软件对Task的定义，简化如下。
 
-![](./assets/Agent评测漫谈 —— 由浅入深讲解Agent评测/61de3c2404dcccce14fc48a595c8ebce.png)
+![](<./assets/Agent评测漫谈 —— 由浅入深讲解Agent评测/61de3c2404dcccce14fc48a595c8ebce.png>)
 
 prompt定义了我们的问题/诉求，expeted behavior定义了我们预期Agent达成的行为，当我们在正式或测试环境中向Agent发送promt，通过trace获取到长程Agent真实的执行路径，就可以得到（prompt - expeted\_behavior - trace）三元组，类似于短程Agent的（query - ground\_truth - answer），即可进行评测。
 
@@ -336,7 +336,7 @@ prompt定义了我们的问题/诉求，expeted behavior定义了我们预期Age
 
 可以把两者的差异总结如下：
 
-![](./assets/Agent评测漫谈 —— 由浅入深讲解Agent评测/c2782eb861fbc3c2d8da834d6a953c90.png)
+![](<./assets/Agent评测漫谈 —— 由浅入深讲解Agent评测/c2782eb861fbc3c2d8da834d6a953c90.png>)
 
 最本质的变化是：
 
@@ -407,7 +407,7 @@ ChatAgent 时代常见流程是：`核心评测员对齐 -> 外包对齐 -> 机�
 我们通过 [Agent SDK](https://code.claude.com/docs/en/agent-sdk/overview)使用其核心原语构建了我们的[长时间运行Agent框架](https://www.anthropic.com/engineering/effective-harnesses-for-long-running-agents)。
 - **评估套件（Evaluation Suite）**：旨在测量特定能力或行为的任务集合。套件中的任务通常共享一个广泛的目标。例如，客户支持评估套件可能测试退款、取消和升级。
 
-![](./assets/Agent评测漫谈 —— 由浅入深讲解Agent评测/fea2bd1ce7014f970e9e8863cead774f.png)
+![](<./assets/Agent评测漫谈 —— 由浅入深讲解Agent评测/fea2bd1ce7014f970e9e8863cead774f.png>)
 
 2026年2月，龙虾在全球爆火时候，社区涌现出面向龙虾评测的开源软件：
 
@@ -420,4 +420,4 @@ com/claw-eval/claw-eval/blob/main/tasks/C12zh_ecommerce_operations/task.yaml) |
 | [WildClawBench](https://github.com/InternLM/WildClawBench) | [WildClawBench：野生环境 AI Agent 能力评测 10 大模型谁的"龙虾"最强？](https://www.ai-insight.
 org/reports/wildclaw-bench-2026)核心理念是"在野生环境中测试 Agent"——不是给模型一个精心设计的沙盒，而是把它扔进真实用户每天使用 OpenClaw Agent 的场景中，看它能不能活下来。 | 500 | Skill |
 
-![](./assets/Agent评测漫谈 —— 由浅入深讲解Agent评测/dc25182072b369a3db34d0d2998a6d52.png)
+![](<./assets/Agent评测漫谈 —— 由浅入深讲解Agent评测/dc25182072b369a3db34d0d2998a6d52.png>)
