@@ -1,0 +1,117 @@
+{
+  "archived": {
+    "https://mp.weixin.qq.com/s/ISwjIw5lj7JlcQJV7BOx5g": {
+      "title": "Agent 治理：用 Hook 堵住 LLM 的偷懒、越权与失忆",
+      "account": "腾讯程序员",
+      "archived_at": "2026-08-24T13:50:20",
+      "images": 15,
+      "file": "Agent 治理：用 Hook 堵住 LLM 的偷懒、越权与失忆.md"
+    },
+    "https://mp.weixin.qq.com/s/fsVJiorPBN4ylGjUYBcIPw": {
+      "title": "Agent开始“自我进化”：会出题、会反思，还会自己长出新技能",
+      "account": "腾讯程序员",
+      "archived_at": "2026-08-24T13:50:20",
+      "images": 27,
+      "file": "Agent开始“自我进化”：会出题、会反思，还会自己长出新技能.md"
+    },
+    "https://mp.weixin.qq.com/s/gZKWRqznB8sNBFf69fBIvw": {
+      "title": "Agent评测漫谈 —— 由浅入深讲解Agent评测",
+      "account": "图灵Agent评测",
+      "archived_at": "2026-08-24T13:50:20",
+      "images": 20,
+      "file": "Agent评测漫谈 —— 由浅入深讲解Agent评测.md"
+    },
+    "https://mp.weixin.qq.com/s/kz_7d66dhmPhOUlcMh4MzA": {
+      "title": "AI Coding的下一站，不是更会写代码，而是更懂团队",
+      "account": "腾讯程序员",
+      "archived_at": "2026-08-24T13:50:20",
+      "images": 10,
+      "file": "AI Coding的下一站，不是更会写代码，而是更懂团队.md"
+    },
+    "https://mp.weixin.qq.com/s/B29yrjptZiV4d_6cSskjmg": {
+      "title": "AI Native 交易核心系统的研发范式｜得物技术",
+      "account": "行亦",
+      "archived_at": "2026-08-24T13:50:20",
+      "images": 24,
+      "file": "AI Native 交易核心系统的研发范式｜得物技术.md"
+    },
+    "https://mp.weixin.qq.com/s/YqIyL7uW4EV2r5HLDW7wcA": {
+      "title": "Loop Engineering 实践指南：在 Code Buddy 中构建自主循环系统",
+      "account": "腾讯程序员",
+      "archived_at": "2026-08-24T13:50:20",
+      "images": 3,
+      "file": "Loop Engineering 实践指南：在 Code Buddy 中构建自主循环系统.md"
+    },
+    "https://mp.weixin.qq.com/s/LzpfUsJRMcpPHzDovo5IrA": {
+      "title": "Loop Engineering 已死？ 一文带你了解Graph Engineering",
+      "account": "腾讯技术工程",
+      "archived_at": "2026-08-24T13:50:20",
+      "images": 13,
+      "file": "Loop Engineering 已死？ 一文带你了解Graph Engineering.md"
+    },
+    "https://mp.weixin.qq.com/s/p5pfVF0-Wi-UIpQxk3H1Qw": {
+      "title": "上线后差点“挤爆”服务器，Marvis凭什么让用户追着6只小马“上班”？",
+      "account": "腾讯程序员",
+      "archived_at": "2026-08-24T13:50:20",
+      "images": 6,
+      "file": "上线后差点“挤爆”服务器，Marvis凭什么让用户追着6只小马“上班”？.md"
+    },
+    "https://mp.weixin.qq.com/s/_ctmgcnt-G46bmrFmR2vZg": {
+      "title": "从 Agent Flow 到 AI Native：为什么通用 Agent 是“饮鸩止渴”",
+      "account": "陈以强",
+      "archived_at": "2026-08-24T13:50:20",
+      "images": 2,
+      "file": "从 Agent Flow 到 AI Native：为什么通用 Agent 是“饮鸩止渴”.md"
+    },
+    "https://mp.weixin.qq.com/s/UE-RZH9hnbBd06CVapFGrA": {
+      "title": "从AI Coding到Harness Engineering的端到端工程开发实践",
+      "account": "腾讯程序员",
+      "archived_at": "2026-08-24T13:50:20",
+      "images": 15,
+      "file": "从AI Coding到Harness Engineering的端到端工程开发实践.md"
+    },
+    "https://mp.weixin.qq.com/s/cMzngHjtMacdXNnD-Y6Ieg": {
+      "title": "前端 Skill 驱动的团队 AI Coding 实践：从个人到整体提效",
+      "account": "王僖",
+      "archived_at": "2026-08-24T13:50:20",
+      "images": 11,
+      "file": "前端 Skill 驱动的团队 AI Coding 实践：从个人到整体提效.md"
+    },
+    "https://mp.weixin.qq.com/s/Tq0sW8uorXh0kfcNF3blXg": {
+      "title": "当整个团队开始 0 人工Coding：一份万字AI Native研发实战手册",
+      "account": "腾讯程序员",
+      "archived_at": "2026-08-24T13:50:20",
+      "images": 7,
+      "file": "当整个团队开始 0 人工Coding：一份万字AI Native研发实战手册.md"
+    },
+    "https://mp.weixin.qq.com/s/newlO_w5OEHGhg7dk7Wa4w": {
+      "title": "当理解成为瓶颈：AI 编程时代的认知债与意图债",
+      "account": "聂晓龙",
+      "archived_at": "2026-08-24T13:50:20",
+      "images": 7,
+      "file": "当理解成为瓶颈：AI 编程时代的认知债与意图债.md"
+    },
+    "https://mp.weixin.qq.com/s/kYJ2kHrQrolmY8nDfN_Q3Q": {
+      "title": "腾讯WorkBuddy实践：如何把Agent做成可用产品",
+      "account": "Anne",
+      "archived_at": "2026-08-24T13:50:20",
+      "images": 30,
+      "file": "腾讯WorkBuddy实践：如何把Agent做成可用产品.md"
+    },
+    "https://mp.weixin.qq.com/s/g4nTfxm7ebzRwkAVIGdIbg": {
+      "title": "驾驭AI Coding：一份面向团队的Harness Engineering落地规范",
+      "account": "腾讯程序员",
+      "archived_at": "2026-08-24T13:50:20",
+      "images": 20,
+      "file": "驾驭AI Coding：一份面向团队的Harness Engineering落地规范.md"
+    },
+    "https://mp.weixin.qq.com/s/5Tvv8g20CybjbT0a7iUfHw": {
+      "title": "AI Agent 应用精细化评测：评测体系设计与工程实践",
+      "account": "阿里技术",
+      "archived_at": "2026-09-06T10:12:55",
+      "images": 23,
+      "file": "AI Agent 应用精细化评测：评测体系设计与工程实践.md"
+    }
+  },
+  "skipped": {}
+}

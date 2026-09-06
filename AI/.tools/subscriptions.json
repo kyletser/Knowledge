@@ -1,0 +1,29 @@
+{
+  "_说明": "公众号订阅配置。accounts 里填你要追踪的公众号；detector 是自动检测通道（需 Docker 服务）。只填 accounts + 用 inbox.txt 也能跑，不依赖 detector。",
+  "settings": {
+    "output_dir": "AI",
+    "soft_wrap_width": 200,
+    "min_images": 1,
+    "fetch_timeout": 30,
+    "检测范围_天": 3
+  },
+  "detector": {
+    "enabled": false,
+    "_enabled说明": "改成 true 才会去拉 RSS。前提：Docker Desktop 已启动 + we-mp-rss 容器在跑（见 docker-compose.wechat.yml）",
+    "base_url": "http://localhost:8001",
+    "_rss说明": "每个账号下面可填 rss 字段，指向该号的 RSS/Atom 地址。兼容 we-mp-rss、WeWe-RSS、RSSHub 输出的任意标准 RSS/Atom。"
+  },
+  "accounts": [
+    {
+      "name": "腾讯程序员",
+      "enabled": true,
+      "rss": ""
+    },
+    {
+      "name": "阿里技术",
+      "enabled": true,
+      "rss": ""
+    }
+  ],
+  "_accounts说明": "把你想订阅的公众号加到这里。name 用于归档时标记来源；rss 留空则该号只走 inbox 手动通道。当前只有从你已归档文章里推断出的一个示例，请替换成你的真实订阅清单。"
+}

@@ -5,7 +5,7 @@
 
 ---
 
-![](<./assets/_shared/db8a8459e6246fbbaaa0a9ccfd10663e.gif>)
+![](<./assets/上线后差点“挤爆”服务器，Marvis凭什么让用户追着6只小马“上班”？/c1c2db5889092a74bee928b3c104b62f.gif>)
 
 > **导语**：
 > 5月20日23点58分，Marvis 上线。

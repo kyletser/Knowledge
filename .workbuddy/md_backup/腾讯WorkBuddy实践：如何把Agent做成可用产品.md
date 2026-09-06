@@ -6,7 +6,7 @@
 ---
 
 
-![](<./assets/_shared/db8a8459e6246fbbaaa0a9ccfd10663e.gif>)
+![](<./assets/腾讯WorkBuddy实践：如何把Agent做成可用产品/c1c2db5889092a74bee928b3c104b62f.gif>)
 
 我们总以为，把 Agent 做好，关键在于换一个更强的模型，或者把提示词写得更长、更细。
 
@@ -669,6 +669,6 @@ Harness 应优先覆盖重复、确定、可验证的工作；探索和业务判
 
 [www.workbuddy.cn](https://www.workbuddy.cn/)
 
-![](<./assets/_shared/30046b109b5a2322ac7c6ca55bb68911.gif>)
+![](<./assets/腾讯WorkBuddy实践：如何把Agent做成可用产品/366862c98fc42b63e04ea33820fbb5c7.gif>)
 
-![](<./assets/_shared/889452612960f3f2c40d727f4ad9443d.png>)
+![](<./assets/腾讯WorkBuddy实践：如何把Agent做成可用产品/1ddf1687e526c8734304b339ac51fb69.png>)

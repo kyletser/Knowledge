@@ -139,7 +139,9 @@ def strip_promo(content: Tag) -> int:
 
     策略：只在正文「末尾若干块」里查找最后一个命中 PROMO_RE 的块，然后从该块起
     一直删到末尾（推广永远在文末，其后通常是空壳 section / 隐藏 <p> 等 footer）。
-    只有命中推广词才判定为推广，避免误删正文中偶发的「关注/点赞」等词或尾部配图。
+    推广块是短横幅（二维码/关注语）；正文长块命中关键词多为正常行文提及
+    （「往期回顾/在看/订阅」等），限长 120 字，避免顶层块少时把整篇正文当推广砍掉
+    （2026-09-07 得物文章 5663 字正文被整段删除的实测教训）。
     返回删除节点数。
     """
     children = [c for c in content.children if isinstance(c, Tag)]
@@ -150,7 +152,7 @@ def strip_promo(content: Tag) -> int:
     promo_idx = -1
     for offset, child in enumerate(tail):
         text = child.get_text(" ", strip=True)
-        if text and PROMO_RE.search(text):
+        if text and len(text) <= 120 and PROMO_RE.search(text):
             promo_idx = len(children) - len(tail) + offset
             break
     if promo_idx == -1:
@@ -323,6 +325,9 @@ def archive_one(
     article_markdown = re.sub(r"\n{3,}", "\n\n", article_markdown).strip()
     markdown = "\n".join(metadata) + "\n\n" + article_markdown + "\n"
     markdown = polish_markdown(markdown)
+    # 残页守卫：微信偶发下发「有壳无内容」降级页（无风控特征词），拒绝保存避免残文
+    if len(content.get_text(strip=True)) < 30 and len(re.findall(r"!\[[^\]]*\]\(", markdown)) < 2:
+        raise RuntimeError("页面内容不完整（疑似风控降级页）：文本/图片过少，已放弃保存")
     output_dir.mkdir(parents=True, exist_ok=True)
     output_path.write_text(markdown, encoding="utf-8")
     return output_path

@@ -6,7 +6,7 @@
 ---
 
 
-![](<./assets/_shared/db8a8459e6246fbbaaa0a9ccfd10663e.gif>)
+![](<./assets/Agent开始“自我进化”：会出题、会反思，还会自己长出新技能/c1c2db5889092a74bee928b3c104b62f.gif>)
 
 作者：horacebao、ashexie
 
@@ -664,6 +664,6 @@ Dola是一款基于Agentic AI能力开发的全链路数据助手：用户只需
 
 这里只是以股票回测这样一个比较复杂的案例场景展开，大家应该可以想象到，在工作场景中，Dola对于日常数据分析工作的提效程度是显而易见的。
 
-![](<./assets/_shared/30046b109b5a2322ac7c6ca55bb68911.gif>)
+![](<./assets/Agent开始“自我进化”：会出题、会反思，还会自己长出新技能/366862c98fc42b63e04ea33820fbb5c7.gif>)
 
-![](<./assets/_shared/889452612960f3f2c40d727f4ad9443d.png>)
+![](<./assets/Agent开始“自我进化”：会出题、会反思，还会自己长出新技能/1ddf1687e526c8734304b339ac51fb69.png>)

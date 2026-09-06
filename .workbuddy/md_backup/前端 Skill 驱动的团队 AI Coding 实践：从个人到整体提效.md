@@ -499,8 +499,8 @@ AI 时代真正稀缺的能力是发现痛点的洞察力，技术实现门槛�
 
 团队研发流程的每个质量关口都有 Skill 约束在场，AI 在整条链路上都带着团队经验运行。
 
-![图片](<./assets/_shared/1177150e8f9b118e1cb4cc2f49b3dccc.gif>)
+![图片](<./assets/前端 Skill 驱动的团队 AI Coding 实践：从个人到整体提效/3ce072677da9a476c84656515a94ef58.gif>)
 
-![图片](<./assets/_shared/47182c03bf9499708e5a20197c056d9b.gif>)
+![图片](<./assets/前端 Skill 驱动的团队 AI Coding 实践：从个人到整体提效/cda524bfff5eae6825001a9a826985cc.gif>)
 
 欢迎留言一起参与讨论~

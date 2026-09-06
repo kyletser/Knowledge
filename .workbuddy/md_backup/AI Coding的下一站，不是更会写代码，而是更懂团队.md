@@ -5,7 +5,7 @@
 
 ---
 
-![](<./assets/_shared/db8a8459e6246fbbaaa0a9ccfd10663e.gif>)
+![](<./assets/AI Coding的下一站，不是更会写代码，而是更懂团队/c1c2db5889092a74bee928b3c104b62f.gif>)
 
 > **导语**：
 > 作者：linjangyang、lypeerluo、kehawang、yansycao
@@ -283,6 +283,6 @@ Merge 是入库前的最后一关。它判断一条新经验和历史经验库�
 
 ![](<./assets/AI Coding的下一站，不是更会写代码，而是更懂团队/2da2e11461eb8ff0bce2a6faff9223f3.png>)
 
-![](<./assets/_shared/30046b109b5a2322ac7c6ca55bb68911.gif>)
+![](<./assets/AI Coding的下一站，不是更会写代码，而是更懂团队/366862c98fc42b63e04ea33820fbb5c7.gif>)
 
-![](<./assets/_shared/889452612960f3f2c40d727f4ad9443d.png>)
+![](<./assets/AI Coding的下一站，不是更会写代码，而是更懂团队/1ddf1687e526c8734304b339ac51fb69.png>)

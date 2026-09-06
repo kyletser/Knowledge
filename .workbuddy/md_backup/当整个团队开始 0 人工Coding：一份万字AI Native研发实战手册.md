@@ -6,7 +6,7 @@
 ---
 
 
-![](<./assets/_shared/db8a8459e6246fbbaaa0a9ccfd10663e.gif>)
+![](<./assets/当整个团队开始 0 人工Coding：一份万字AI Native研发实战手册/c1c2db5889092a74bee928b3c104b62f.gif>)
 
 作者：binxiong
 
@@ -634,6 +634,6 @@ Review 人员在审查 MR 时要同时看**代码**和**规划文档**：
 | MR 通过后 | `/opsx:archive [变更名称]` |
 | 前后端联动 | 父目录启动 CLI → `/opsx:propose` 一次性规划 |
 
-![](<./assets/_shared/30046b109b5a2322ac7c6ca55bb68911.gif>)
+![](<./assets/当整个团队开始 0 人工Coding：一份万字AI Native研发实战手册/366862c98fc42b63e04ea33820fbb5c7.gif>)
 
-![](<./assets/_shared/889452612960f3f2c40d727f4ad9443d.png>)
+![](<./assets/当整个团队开始 0 人工Coding：一份万字AI Native研发实战手册/1ddf1687e526c8734304b339ac51fb69.png>)

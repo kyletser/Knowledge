@@ -1,0 +1,25 @@
+# 公众号更新检测服务（we-mp-rss）
+#
+# 前置条件（两件事必须先做，缺一不可）：
+#   1. 启动 Docker Desktop —— 当前机器上 docker 命令有，但守护进程没跑。
+#      验证方式：docker info 能正常返回 ServerVersion 即已就绪。
+#   2. 首次启动后浏览器打开 http://localhost:8001，扫码登录微信，
+#      在界面里订阅你要追踪的公众号，拿到每个号的 RSS 地址，
+#      把地址填回 subscriptions.json 对应账号的 rss 字段，并把 detector.enabled 改为 true。
+#
+# 启动：docker compose -f docker-compose.wechat.yml up -d
+# 停止：docker compose -f docker-compose.wechat.yml down
+# 看日志：docker compose -f docker-compose.wechat.yml logs -f
+
+services:
+  we-mp-rss:
+    image: rachelos/we-mp-rss:latest
+    container_name: we-mp-rss
+    restart: unless-stopped
+    ports:
+      - "8001:8001"
+    volumes:
+      - ./we-mp-rss-data:/app/data
+    environment:
+      # 按需调整；默认即可跑起来
+      - TZ=Asia/Shanghai
